@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisha Madaki | Flight Software & Embodied AI Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- MathJax for Rendering Mathematical Formulations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { background-color: #fafafa; color: #171717; font-family: 'Inter', sans-serif; line-height: 1.6; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        a { color: #2563eb; text-decoration: underline; text-underline-offset: 3px; }
+        a:hover { color: #1d4ed8; }
+    </style>
+</head>
+<body class="max-w-4xl mx-auto px-5 py-12 sm:py-16 selection:bg-neutral-200">
+
+    <!-- HEADER / BIO -->
+    <header class="flex flex-col-reverse sm:flex-row items-start sm:items-center justify-between gap-6 mb-12 border-b border-neutral-200 pb-10">
+        <div class="space-y-4 max-w-xl">
+            <div>
+                <h1 class="text-3xl font-extrabold tracking-tight text-neutral-900">Elisha</h1>
+                <p class="text-neutral-600 font-medium mt-1">Flight Software & Autonomy Engineer</p>
+            </div>
+            
+            <p class="text-neutral-700 text-base leading-relaxed">
+                Specializing in embedded nonlinear control (NMPC / SINDy-MPC), visual-inertial state estimation, and vehicle-agnostic swarm architectures. Currently focused on bridging high-level embodied AI foundation models down to real-time C++ motor execution loops on bare-metal UAS hardware.
+            </p>
+
+            <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm mono">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:elisha@example.com">Email</a>
+                <a href="#cv">CV (PDF)</a>
+            </div>
+        </div>
+
+        <!-- Headshot -->
+        <div class="flex-shrink-0">
+            <div class="w-32 h-32 rounded-xl overflow-hidden bg-neutral-200 border border-neutral-300 shadow-sm">
+                <img src="IMG_20250103_143141_521.jpg" alt="Elisha" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </header>
+
+    <main class="space-y-16">
+
+        <!-- ACTIVE RESEARCH RADAR: EMBODIED AI -->
+        <section class="p-6 rounded-xl border border-neutral-200 bg-white shadow-sm space-y-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
+                    <h2 class="text-xs font-bold text-neutral-900 uppercase tracking-wider mono">Active Technical Direction: Embodied AI for UAS</h2>
+                </div>
+                <span class="text-xs mono text-neutral-400">2026 Focus</span>
+            </div>
+            
+            <p class="text-neutral-700 text-sm leading-relaxed">
+                Traditional flight stacks decouple high-level perception from low-level control loops. My research trajectory focuses on <strong>end-to-end embodied intelligence</strong>: evaluating how vision-language-action (VLA) models and neural policies can execute real-time spatial reasoning while continuously outputting dynamically feasible control commands directly to low-level flight firmware.
+            </p>
+
+            <!-- Technical Roadmap Bullets -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs mono text-neutral-600">
+                <div class="p-2.5 bg-neutral-50 rounded border border-neutral-100">
+                    <span class="font-bold text-neutral-900 block mb-1">1. Sim-to-Real Transfer</span>
+                    Reinforcement learning policies trained in Isaac Sim for agile multi-rotor maneuvers.
+                </div>
+                <div class="p-2.5 bg-neutral-50 rounded border border-neutral-100">
+                    <span class="font-bold text-neutral-900 block mb-1">2. Direct Firmware Coupling</span>
+                    Integrating neural inference engines directly with PX4/ArduPilot C++ control allocation.
+                </div>
+                <div class="p-2.5 bg-neutral-50 rounded border border-neutral-100">
+                    <span class="font-bold text-neutral-900 block mb-1">3. Closed-Loop VIO Perception</span>
+                    Fusing visual feature representations directly into real-time state estimation matrices.
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED ENGINEERING CASE STUDIES -->
+        <section class="space-y-12">
+            <h2 class="text-2xl font-bold tracking-tight text-neutral-900 border-b border-neutral-200 pb-3">Engineering Case Studies & Proof of Work</h2>
+            
+            <!-- CASE STUDY 1: SINDy-MPC -->
+            <article class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start border-b border-neutral-200 pb-10">
+                <!-- Visual Media Container (Left Side) -->
+                <div class="md:col-span-5 space-y-2">
+                    <div class="aspect-video bg-neutral-100 rounded-lg overflow-hidden border border-neutral-200 shadow-sm relative group">
+                        <!-- Replace src with actual flight log gif/image -->
+                        <img src="project_sindy_bench.jpg" alt="10-inch Multirotor Flight Bench" class="w-full h-full object-cover">
+                        <div class="absolute bottom-2 left-2 bg-black/70 text-white text-[10px] mono px-2 py-0.5 rounded">10" Flight Test Bench</div>
+                    </div>
+                    <p class="text-[11px] text-neutral-500 mono leading-normal">
+                        Figure 1: Custom 10-inch flight platform used for system identification & SINDy state-matrix validation.
+                    </p>
+                </div>
+
+                <!-- Technical Content (Right Side) -->
+                <div class="md:col-span-7 space-y-3">
+                    <div class="flex flex-wrap items-baseline justify-between gap-2">
+                        <h3 class="font-bold text-neutral-900 text-lg">Firmware-Embedded SINDy-MPC Autopilot</h3>
+                        <span class="text-xs mono text-neutral-500">[C++, PX4, EKF, Linear Algebra]</span>
+                    </div>
+
+                    <p class="text-neutral-700 text-sm leading-relaxed">
+                        Implemented dynamic modeling using Sparse Identification of Nonlinear Dynamics (SINDy) directly within PX4 firmware. Instead of relying on static linearized models, the system continuously extracts active state equations $\dot{x} = f(x, u)$ to update MPC prediction horizons in turbulent environments.
+                    </p>
+
+                    <!-- Embedded Math / Formula Block -->
+                    <div class="p-3 bg-neutral-100 rounded text-xs mono text-neutral-800">
+                        $$\dot{x} = \mathbf{\Theta}(x, u)\mathbf{\Xi}$$
+                        <span class="text-[11px] text-neutral-500 block text-center mt-1">Sparse coefficient matrix $\mathbf{\Xi}$ evaluated on-board at 100 Hz</span>
+                    </div>
+
+                    <div class="text-xs mono space-x-4 pt-1">
+                        <a href="#">[PX4 Firmware Integration]</a>
+                        <a href="#">[SITL Benchmark Log]</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CASE STUDY 2: VIO & DJI SDK -->
+            <article class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start border-b border-neutral-200 pb-10">
+                <!-- Visual Media Container (Left Side) -->
+                <div class="md:col-span-5 space-y-2">
+                    <div class="aspect-video bg-neutral-100 rounded-lg overflow-hidden border border-neutral-200 shadow-sm relative">
+                        <!-- Replace src with actual VIO camera / tracking setup image -->
+                        <img src="project_vio_tracking.jpg" alt="VIO and Camera Payload Setup" class="w-full h-full object-cover">
+                        <div class="absolute bottom-2 left-2 bg-black/70 text-white text-[10px] mono px-2 py-0.5 rounded">VIO & Payload SDK Rig</div>
+                    </div>
+                    <p class="text-[11px] text-neutral-500 mono leading-normal">
+                        Figure 2: Edge compute payload running VIO positioning & optical target acquisition pipeline.
+                    </p>
+                </div>
+
+                <!-- Technical Content (Right Side) -->
+                <div class="md:col-span-7 space-y-3">
+                    <div class="flex flex-wrap items-baseline justify-between gap-2">
+                        <h3 class="font-bold text-neutral-900 text-lg">Visual Target Acquisition & VIO State Estimation</h3>
+                        <span class="text-xs mono text-neutral-500">[PyTorch, OpenCV, VIO, DJI PSDK]</span>
+                    </div>
+
+                    <p class="text-neutral-700 text-sm leading-relaxed">
+                        Engineered a platform-agnostic perception pipeline capable of operating on open-source PX4 units and commercial platforms via DJI Payload SDK. Integrates Visual-Inertial Odometry (VIO) with real-time target tracking, achieving stable 60+ FPS inference on edge hardware.
+                    </p>
+
+                    <!-- Key Metrics Callout -->
+                    <div class="grid grid-cols-2 gap-2 text-xs mono">
+                        <div class="p-2 border border-neutral-200 rounded bg-white">
+                            <span class="text-neutral-400 block text-[10px]">INFERENCE LATENCY</span>
+                            <span class="font-bold text-neutral-900">12ms @ 60 FPS</span>
+                        </div>
+                        <div class="p-2 border border-neutral-200 rounded bg-white">
+                            <span class="text-neutral-400 block text-[10px]">ESTIMATION DRIFT</span>
+                            <span class="font-bold text-neutral-900">&lt; 0.4% trajectory</span>
+                        </div>
+                    </div>
+
+                    <div class="text-xs mono space-x-4 pt-1">
+                        <a href="#">[Tracking Architecture]</a>
+                        <a href="#">[Payload SDK Wrapper]</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CASE STUDY 3: EMBEDDED TELEMETRY ENCRYPTION -->
+            <article class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start border-b border-neutral-200 pb-10">
+                <!-- Visual Media Container (Left Side) -->
+                <div class="md:col-span-5 space-y-2">
+                    <div class="aspect-video bg-neutral-100 rounded-lg overflow-hidden border border-neutral-200 shadow-sm relative">
+                        <!-- Replace src with telemetry circuit or protocol flowchart -->
+                        <img src="project_mbedtls_crypto.jpg" alt="Telemetry Encryption Layer" class="w-full h-full object-cover">
+                        <div class="absolute bottom-2 left-2 bg-black/70 text-white text-[10px] mono px-2 py-0.5 rounded">mbedTLS Hardware Hook</div>
+                    </div>
+                    <p class="text-[11px] text-neutral-500 mono leading-normal">
+                        Figure 3: Hardware-level handshake trace for encrypted serial telemetry over MAVLink.
+                    </p>
+                </div>
+
+                <!-- Technical Content (Right Side) -->
+                <div class="md:col-span-7 space-y-3">
+                    <div class="flex flex-wrap items-baseline justify-between gap-2">
+                        <h3 class="font-bold text-neutral-900 text-lg">Embedded Cryptographic Telemetry Layer</h3>
+                        <span class="text-xs mono text-neutral-500">[C++, mbedTLS, AES-256, MAVLink]</span>
+                    </div>
+
+                    <p class="text-neutral-700 text-sm leading-relaxed">
+                        Integrated low-overhead mbedTLS encryption primitives (ChaCha20-Poly1305 and AES-256-GCM) directly into serial telemetry channels. Designed to secure command links and payload data without exceeding strict microsecond timing bounds on bare-metal microcontrollers.
+                    </p>
+
+                    <div class="text-xs mono space-x-4 pt-1">
+                        <a href="#">[mbedTLS Protocol Spec]</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CASE STUDY 4: DECENTRALIZED SWARM STACK -->
+            <article class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+                <!-- Visual Media Container (Left Side) -->
+                <div class="md:col-span-5 space-y-2">
+                    <div class="aspect-video bg-neutral-100 rounded-lg overflow-hidden border border-neutral-200 shadow-sm relative">
+                        <!-- Replace src with swarm SITL simulation screenshot/gif -->
+                        <img src="project_swarm_mesh.jpg" alt="Decentralized Swarm Simulation" class="w-full h-full object-cover">
+                        <div class="absolute bottom-2 left-2 bg-black/70 text-white text-[10px] mono px-2 py-0.5 rounded">Gazebo Swarm SITL</div>
+                    </div>
+                    <p class="text-[11px] text-neutral-500 mono leading-normal">
+                        Figure 4: Multi-UAV decentralized mesh network coordinating area coverage in SITL.
+                    </p>
+                </div>
+
+                <!-- Technical Content (Right Side) -->
+                <div class="md:col-span-7 space-y-3">
+                    <div class="flex flex-wrap items-baseline justify-between gap-2">
+                        <h3 class="font-bold text-neutral-900 text-lg">Decentralized Vehicle-Agnostic Swarm</h3>
+                        <span class="text-xs mono text-neutral-500">[ROS 2, C++, Multi-Agent RL]</span>
+                    </div>
+
+                    <p class="text-neutral-700 text-sm leading-relaxed">
+                        Architected a fully decentralized, drone-agnostic autonomy stack running distributed ROS 2 nodes over ad-hoc mesh networks. Eliminates single points of failure by distributing state consensus and collision avoidance tasks across all active airborne nodes.
+                    </p>
+
+                    <div class="text-xs mono space-x-4 pt-1">
+                        <a href="#">[Swarm Architecture Spec]</a>
+                        <a href="#">[Simulation Video]</a>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="mt-20 pt-8 border-t border-neutral-200 text-xs mono text-neutral-500 flex justify-between items-center">
+        <span>© 2026 Elisha</span>
+        <span>Flight Software & Embodied AI Engineering</span>
+    </footer>
+
+</body>
+</html>
