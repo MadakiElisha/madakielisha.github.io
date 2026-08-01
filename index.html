@@ -3,49 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elisha Madaki — Flight Software & Autonomy Engineer</title>
+    <title>Elisha Madaki — Flight Software & Embodied AI Engineer</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Human, Authoritative Typography: Plus Jakarta Sans & Fira Code -->
+    <!-- Elite Technical Typography: Plus Jakarta Sans & Fira Code -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { 
-            background-color: #0b0f19; 
-            color: #cbd5e1; 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            line-height: 1.6; 
+        :root {
+            --bg-main: #06090f;
+            --bg-surface: #0d111a;
+            --border-subtle: rgba(255, 255, 255, 0.07);
+            --border-highlight: rgba(99, 102, 241, 0.25);
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-indigo: #818cf8;
         }
+
+        body { 
+            background-color: var(--bg-main); 
+            color: var(--text-main); 
+            font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; 
+            line-height: 1.7; 
+            -webkit-font-smoothing: antialiased;
+        }
+
         .mono { font-family: 'Fira Code', monospace; }
-        .card-border { border: 1px solid rgba(255, 255, 255, 0.08); }
-        .card-border:hover { border-color: rgba(99, 102, 241, 0.3); }
-        pre { background-color: #030712; color: #f3f4f6; }
+
+        /* Minimalist research border aesthetic */
+        .thin-border { border: 1px solid var(--border-subtle); }
+        .thin-border-hover:hover { border-color: var(--border-highlight); }
+
+        pre { 
+            background-color: #020408; 
+            border: 1px solid var(--border-subtle);
+            color: #e2e8f0; 
+        }
+
+        /* Smooth visual media treatment */
+        video, img {
+            border-radius: 0.5rem;
+            filter: brightness(0.95) contrast(1.02);
+        }
     </style>
 </head>
-<body class="max-w-6xl mx-auto px-6 py-12 sm:py-20 selection:bg-indigo-600 selection:text-white">
+<body class="max-w-5xl mx-auto px-6 py-12 sm:py-24 selection:bg-indigo-600 selection:text-white">
 
-    <!-- HERO HEADER -->
-    <header class="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-between gap-10 mb-20 pb-12 border-b border-slate-800/80">
-        <div class="space-y-6 max-w-3xl">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-indigo-400 text-xs mono">
-                Flight Software • Embodied AI • Swarm Autonomy • NMPC / NNPC
+    <!-- HEADER / AUTHOR PROFILE -->
+    <header class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-24 pb-16 border-b border-slate-800/80">
+        <div class="lg:col-span-8 space-y-6">
+            <div class="inline-flex items-center gap-3 text-xs mono text-indigo-400 tracking-wide uppercase">
+                <span>Flight Control Systems</span>
+                <span class="text-slate-700">•</span>
+                <span>Embodied Intelligence</span>
+                <span class="text-slate-700">•</span>
+                <span>Decentralized Swarms</span>
             </div>
 
-            <div>
+            <div class="space-y-2">
                 <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">Elisha Madaki</h1>
-                <p class="text-lg text-indigo-300 font-medium mt-2">
+                <p class="text-xl text-slate-400 font-medium">
                     Embedded Flight Software & Embodied AI Engineer
                 </p>
             </div>
             
-            <p class="text-slate-300 text-base leading-relaxed">
-                <strong>Advanced GNC:</strong> NMPC (SINDy-MPC, NNPC), VIO • <strong>Embodied AI:</strong> Deep Reinforcement Learning, Neural Networks, Real-Time Vision • <strong>Autopilot Core:</strong> PX4 & ArduPilot Firmware Internals • <strong>Multi-Agent:</strong> Decentralized Fleet Swarms & Proprietary Drone SDKs.
+            <p class="text-slate-300 text-base leading-relaxed max-w-2xl font-normal">
+                Engineering vehicle-agnostic autonomy systems at the intersection of bare-metal C++ flight controllers and real-time neural decision engines. Research focus centers on nonlinear MPC (SINDy-MPC, NNPC), deep reinforcement learning for flight dynamics, real-time spatial computer vision, and secure multi-agent fleet operations.
             </p>
 
             <!-- Links -->
-            <div class="flex flex-wrap gap-5 text-xs mono pt-2">
-                <a href="https://github.com/MadakiElisha" target="_blank" class="font-semibold text-white bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded transition-colors">
+            <div class="flex flex-wrap items-center gap-4 text-xs mono pt-2">
+                <a href="https://github.com/MadakiElisha" target="_blank" class="font-semibold text-white bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded transition-all">
                     GitHub: @MadakiElisha
                 </a>
                 <a href="https://linkedin.com" target="_blank" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 rounded transition-colors">LinkedIn</a>
@@ -53,248 +82,293 @@
             </div>
         </div>
 
-        <!-- Hero Photo -->
-        <div class="flex-shrink-0">
-            <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-xl overflow-hidden border border-slate-700 shadow-2xl relative">
-                <img src="IMG_20250103_143141_521.jpeg" alt="Elisha Madaki Hardware Lab" class="w-full h-full object-cover">
-                <div class="absolute bottom-0 inset-x-0 bg-slate-950/80 text-[10px] mono text-center py-1 text-slate-400">
-                    Hardware & Avionics Lab
+        <!-- Hero Media Frame -->
+        <div class="lg:col-span-4 flex justify-start lg:justify-end">
+            <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-xl overflow-hidden border border-slate-800 shadow-2xl relative bg-slate-900">
+                <img src="IMG_20250103_143141_521.jpeg" alt="Elisha Madaki - Embedded Avionics & Hardware Lab" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 inset-x-0 bg-slate-950/85 text-[10px] mono text-center py-1 text-slate-400 backdrop-blur-sm">
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="space-y-24">
+    <main class="space-y-28">
 
-        <!-- CORE RESEARCH & ENGINEERING MANIFESTO -->
-        <section class="p-8 rounded-xl border border-slate-800 bg-slate-900/40 space-y-6">
-            <div class="flex justify-between items-center border-b border-slate-800/80 pb-3">
-                <h2 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mono">Full-Stack Autonomy Architecture & Vision</h2>
-                <span class="text-[11px] mono text-slate-400">End-to-End Embodied Intelligence</span>
+        <!-- SECTION 1: FIRST-PRINCIPLES RESEARCH MANIFESTO -->
+        <section class="space-y-8">
+            <div class="border-b border-slate-800 pb-4">
+                <h2 class="text-xs font-bold text-indigo-400 uppercase tracking-widest mono">Research Manifesto & Technical Directives</h2>
+                <h3 class="text-2xl font-bold text-white tracking-tight mt-1">Bridging Bare-Metal Control with Embodied Intelligence</h3>
             </div>
             
             <p class="text-slate-300 text-base leading-relaxed">
-                Traditional flight control stacks rely heavily on rigid PID controllers, manual system identification, and pre-programmed waypoint handshakes. My work bridges the gap between <strong>bare-metal C++ flight loops</strong> and <strong>high-level embodied intelligence</strong>—developing adaptive, vehicle-agnostic autonomy systems capable of dynamic decision-making in GPS-denied or degraded environments.
+                Modern autonomous flight cannot rely solely on static PID gain schedules and hand-tuned dynamic models. High-agility uncrewed systems operating in unstructured, GPS-denied environments require high-frequency bare-metal flight execution coupled with on-device neural perception and data-driven trajectory planning. My architectural work focuses on four primary engineering thrusts:
             </p>
 
-            <!-- 4 CORE PILLARS GRID -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800 space-y-2">
-                    <h3 class="text-sm font-semibold text-indigo-300 mono">1. Deep RL & Neural Control (NNPC / SINDy)</h3>
-                    <p class="text-xs text-slate-400">Replacing hand-tuned aerodynamics models with data-driven dynamic identification (SINDy-MPC) and continuous Deep Reinforcement Learning for aggressive trajectory planning and fault recovery.</p>
+            <!-- 4 CORE RESEARCH PILLARS -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                
+                <div class="p-6 rounded-xl bg-slate-900/40 thin-border space-y-3">
+                    <div class="text-xs mono text-indigo-400 font-semibold">01 / DYNAMIC CONTROL & DENSITY IDENTIFICATION</div>
+                    <h4 class="text-lg font-bold text-white">Nonlinear MPC & Data-Driven Physics (SINDy-MPC / NNPC)</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Replacing legacy PID cascades with real-time C++ nonlinear model predictive control. Implementing Sparse Identification of Nonlinear Dynamics (SINDy) and Neural Network Predictive Control (NNPC) directly in PX4 flight loops to continuously adapt to aerodynamic shifts, payload variations, and structural transitions.
+                    </p>
                 </div>
-                <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800 space-y-2">
-                    <h3 class="text-sm font-semibold text-indigo-300 mono">2. Multi-Agent & Swarm Fleet Autonomy</h3>
-                    <p class="text-xs text-slate-400">Architecting decentralized, vehicle-agnostic swarm protocols via ROS 2 and MAVLink, enabling autonomous collaborative search-and-rescue without continuous Ground Control Station link dependency.</p>
+
+                <div class="p-6 rounded-xl bg-slate-900/40 thin-border space-y-3">
+                    <div class="text-xs mono text-indigo-400 font-semibold">02 / EMBODIED PERCEPTION & STATE ESTIMATION</div>
+                    <h4 class="text-lg font-bold text-white">Edge Neural Vision & Visual Inertial Odometry</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Deploying hardware-accelerated deep neural networks (YOLO / DeepSORT) alongside Visual-Inertial Odometry (VIO) on edge companion compute. Computing continuous 3D target offsets and visual spatial positioning to drive closed-loop autonomous setpoints without external motion capture.
+                    </p>
                 </div>
-                <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800 space-y-2">
-                    <h3 class="text-sm font-semibold text-indigo-300 mono">3. Advanced Neural Vision & VIO</h3>
-                    <p class="text-xs text-slate-400">Deploying hardware-accelerated deep object detection (YOLO/SORT), Visual-Inertial Odometry, and spatial state estimation directly onto edge companion computers.</p>
+
+                <div class="p-6 rounded-xl bg-slate-900/40 thin-border space-y-3">
+                    <div class="text-xs mono text-indigo-400 font-semibold">03 / MULTI-AGENT ARCHITECTURE</div>
+                    <h4 class="text-lg font-bold text-white">Decentralized Vehicle-Agnostic Swarm Engines</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Architecting decentralized multi-UAV coordination layers via ROS 2 and MAVLink. Facilitating autonomous agent negotiation, dynamic swarm task distribution, and resilient operation in environments completely disconnected from Ground Control Stations (GCS).
+                    </p>
                 </div>
-                <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800 space-y-2">
-                    <h3 class="text-sm font-semibold text-indigo-300 mono">4. Autopilot Cores & Proprietary SDKs</h3>
-                    <p class="text-xs text-slate-400">Extending PX4 and ArduPilot base firmware to build exclusive, high-level proprietary drone SDKs, bare-metal C++ drivers, custom uORB modules, and encrypted GCS links.</p>
+
+                <div class="p-6 rounded-xl bg-slate-900/40 thin-border space-y-3">
+                    <div class="text-xs mono text-indigo-400 font-semibold">04 / AUTOPILOT CORE & SECURITY</div>
+                    <h4 class="text-lg font-bold text-white">Proprietary Firmware SDKs & Cryptographic Layers</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Extending open-source PX4 and ArduPilot internal firmware architectures. Developing custom C++ uORB modules, high-performance proprietary SDK abstractions, and zero-trust telemetry encryption protocols (AEAD) with hardware-enforced memory wiping.
+                    </p>
                 </div>
+
             </div>
         </section>
 
-        <!-- FIELD OPERATIONS & LAB INTEGRATION SECTION -->
+        <!-- SECTION 2: FIELD OPERATIONS & EXPERIMENTAL PROOF -->
         <section class="space-y-8">
-            <div class="border-b border-slate-800 pb-4">
-                <h2 class="text-2xl font-bold text-white tracking-tight">Field Operations, Lab Integration & Flight Ops</h2>
-                <p class="text-xs text-slate-400 mono mt-1">Real-world pre-flight validation, bench testing, avionics setup, and field deployment</p>
+            <div class="border-b border-slate-800 pb-4 flex justify-between items-end">
+                <div>
+                    <h2 class="text-xs font-bold text-indigo-400 uppercase tracking-widest mono">Experimental Validation</h2>
+                    <h3 class="text-2xl font-bold text-white tracking-tight mt-1">Field Operations, Avionics Integration & Flight Ops</h3>
+                </div>
+                <span class="text-xs mono text-slate-500 hidden sm:block">Hardware • Tarmac • SITL/HITL</span>
             </div>
 
-            <!-- PHOTO GRID (2x3 Layout) -->
+            <!-- PHOTO EDITORIAL GRID (2x3 Layout) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <!-- Card 1: Tarmac Pre-Flight Ops -->
-                <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
-                    <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
-                        <img src="assets/cri.jpg" alt="Runway Pre-Flight Operations" class="w-full h-full object-cover">
+                <!-- Card 1: Tarmac Pre-Flight -->
+                <div class="bg-slate-900/30 rounded-xl overflow-hidden thin-border p-3 space-y-3 thin-border-hover transition-all">
+                    <div class="aspect-video bg-slate-950 rounded-lg overflow-hidden relative">
+                        <img src="assets/cri.jpg" alt="Tarmac Flight Operations" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h3 class="text-sm font-semibold text-white">Tarmac Pre-Flight Operations</h3>
-                        <p class="text-xs text-slate-400 mt-1">Pre-flight system checks and physical payload integration on large-scale fixed-wing / VTOL platforms.</p>
+                        <h4 class="text-sm font-semibold text-white">Tarmac Pre-Flight Operations</h4>
+                        <p class="text-xs text-slate-400 mt-1">Pre-flight system checks and physical payload integration on large-scale fixed-wing / VTOL airframes.</p>
                     </div>
                 </div>
 
-                <!-- Card 2: On-Vehicle Firmware Debugging -->
-                <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
-                    <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
+                <!-- Card 2: Firmware Debugging -->
+                <div class="bg-slate-900/30 rounded-xl overflow-hidden thin-border p-3 space-y-3 thin-border-hover transition-all">
+                    <div class="aspect-video bg-slate-950 rounded-lg overflow-hidden relative">
                         <img src="assets/me@uas2.jpg" alt="On-Vehicle Firmware Debugging" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h3 class="text-sm font-semibold text-white">Direct On-Vehicle Flashing & SITL</h3>
-                        <p class="text-xs text-slate-400 mt-1">Interfacing directly with avionics bays to flash PX4 custom modules and verify serial telemetry handshake.</p>
+                        <h4 class="text-sm font-semibold text-white">Direct On-Vehicle Flashing & SITL</h4>
+                        <p class="text-xs text-slate-400 mt-1">Interfacing directly with avionics bays to flash PX4 custom uORB modules and verify serial telemetry handshake.</p>
                     </div>
                 </div>
 
-                <!-- Card 3: Lab Briefing & Systems Architecture -->
-                <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
-                    <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
-                        <img src="assets/me@pf1.jpg" alt="Lab Briefing and Demo" class="w-full h-full object-cover">
+                <!-- Card 3: Lab Briefing -->
+                <div class="bg-slate-900/30 rounded-xl overflow-hidden thin-border p-3 space-y-3 thin-border-hover transition-all">
+                    <div class="aspect-video bg-slate-950 rounded-lg overflow-hidden relative">
+                        <img src="assets/me@pf1.jpg" alt="Lab Briefing" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h3 class="text-sm font-semibold text-white">Lab Systems Briefing</h3>
-                        <p class="text-xs text-slate-400 mt-1">Demonstrating custom hardware testbeds, onboard neural acceleration cards, and companion processing hardware.</p>
+                        <h4 class="text-sm font-semibold text-white">Lab Systems Briefing</h4>
+                        <p class="text-xs text-slate-400 mt-1">Demonstrating custom hardware testbeds, onboard neural acceleration cards, and companion processing architecture.</p>
                     </div>
                 </div>
 
-                <!-- Card 4: Multirotor Testbed Workbench -->
-                <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
-                    <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
-                        <img src="assets/quad.jpg" alt="10-inch Multirotor Testbed Workbench" class="w-full h-full object-cover">
+                <!-- Card 4: 10-inch Multirotor -->
+                <div class="bg-slate-900/30 rounded-xl overflow-hidden thin-border p-3 space-y-3 thin-border-hover transition-all">
+                    <div class="aspect-video bg-slate-950 rounded-lg overflow-hidden relative">
+                        <img src="assets/quad.jpg" alt="10-inch Multirotor Workbench" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h3 class="text-sm font-semibold text-white">Multirotor Workbench Setup</h3>
-                        <p class="text-xs text-slate-400 mt-1">Bench-testing 10-inch multirotor companion computers (Jetson/Raspberry Pi), receiver links, and real-time control scripts.</p>
+                        <h4 class="text-sm font-semibold text-white">Multirotor Workbench Setup</h4>
+                        <p class="text-xs text-slate-400 mt-1">Bench-testing companion computers (Jetson/Raspberry Pi), custom receiver links, and real-time control scripts.</p>
                     </div>
                 </div>
 
-                <!-- Card 5: Field Line Telemetry -->
-                <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
-                    <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
+                <!-- Card 5: Field Telemetry -->
+                <div class="bg-slate-900/30 rounded-xl overflow-hidden thin-border p-3 space-y-3 thin-border-hover transition-all">
+                    <div class="aspect-video bg-slate-950 rounded-lg overflow-hidden relative">
                         <img src="assets/me@uas3.jpg" alt="Field Telemetry Operations" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h3 class="text-sm font-semibold text-white">Flight Line Telemetry Monitoring</h3>
-                        <p class="text-xs text-slate-400 mt-1">Collaborative real-time telemetry log evaluation and parameter tuning during active outdoor flight trials.</p>
+                        <h4 class="text-sm font-semibold text-white">Flight Line Telemetry Operations</h4>
+                        <p class="text-xs text-slate-400 mt-1">Collaborative real-time telemetry log evaluation and active gain tuning during live outdoor flight trials.</p>
                     </div>
                 </div>
 
-                <!-- Card 6: Airframe Assembly & Hardware Inventory -->
-                <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
-                    <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
-                        <img src="assets/me@uas1.jpg" alt="Avionics and Airframe Development" class="w-full h-full object-cover">
+                <!-- Card 6: Avionics Integration -->
+                <div class="bg-slate-900/30 rounded-xl overflow-hidden thin-border p-3 space-y-3 thin-border-hover transition-all">
+                    <div class="aspect-video bg-slate-950 rounded-lg overflow-hidden relative">
+                        <img src="assets/me@uas1.jpg" alt="Avionics Integration" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h3 class="text-sm font-semibold text-white">Avionics & Airframe Integration</h3>
-                        <p class="text-xs text-slate-400 mt-1">Assembly and bench testing of physical fuselages, power distribution boards, motor ESCs, and flight control units.</p>
+                        <h4 class="text-sm font-semibold text-white">Vehicle Setup</h4>
+                        <p class="text-xs text-slate-400 mt-1">Assembly and bench testing of physical fuselages, power distribution systems, motor ESCs, and flight controllers.</p>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- FEATURED ENGINEERING CASE STUDIES -->
+        <!-- SECTION 3: SYSTEM ARCHITECTURE & CODE CASE STUDIES -->
         <section class="space-y-16">
             <div class="border-b border-slate-800 pb-4">
-                <h2 class="text-2xl font-bold text-white tracking-tight">System Architecture & Case Studies</h2>
-                <p class="text-xs text-slate-400 mono mt-1">End-to-End Embodied Vision, Firmware NMPC Modules, Decentralized Swarms & Security Layers</p>
+                <h2 class="text-xs font-bold text-indigo-400 uppercase tracking-widest mono">Technical Deep Dives</h2>
+                <h3 class="text-2xl font-bold text-white tracking-tight mt-1">System Architecture & Code Execution</h3>
             </div>
 
-            <!-- CASE STUDY 1: NEURAL TARGET TRACKING & VISION -->
-            <article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start border-b border-slate-800/80 pb-12">
-                <div class="md:col-span-5 space-y-3">
-                    <div class="grid grid-cols-1 gap-3">
-                        <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden border border-slate-800">
-                            <img src="assets/drone_tracker.jpg" alt="Drone Tracker Scanning Mode" class="w-full h-full object-cover">
+            <!-- CASE STUDY 1: NEURAL TARGET TRACKING & EMBODIED VISION -->
+            <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start border-b border-slate-800/80 pb-16">
+                <!-- Visual Proof (Supports MP4 Video Loop with JPEG Fallback) -->
+                <div class="lg:col-span-5 space-y-3">
+                    <div class="space-y-3">
+                        <div class="aspect-video bg-slate-950 rounded-lg overflow-hidden border border-slate-800 relative">
+                            <video autoplay loop muted playsinline poster="assets/drone_tracker.jpg" class="w-full h-full object-cover">
+                                <source src="assets/drone_tracker.mp4" type="video/mp4">
+                                <img src="assets/drone_tracker.jpg" alt="Drone Tracker Scanning Mode" class="w-full h-full object-cover">
+                            </video>
                         </div>
-                        <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden border border-slate-800">
+                        <div class="aspect-video bg-slate-950 rounded-lg overflow-hidden border border-slate-800 relative">
                             <img src="assets/drone_trackerII.jpg" alt="Drone Tracker Target Locked" class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <p class="text-[11px] text-slate-500 mono">Figure 1: Custom `Drone Tracker` multi-vehicle neural acquisition and SORT tracking executing in Gazebo SITL.</p>
+                    <p class="text-[11px] text-slate-500 mono">Figure 1: Custom `Drone Tracker` neural object detection and multi-vehicle SORT acquisition in Gazebo SITL.</p>
                 </div>
 
-                <div class="md:col-span-7 space-y-4">
-                    <div class="flex flex-wrap items-baseline justify-between gap-2">
-                        <h3 class="font-bold text-white text-xl">Real-Time Neural Vision & Multi-Target Tracker</h3>
-                        <span class="text-xs mono text-indigo-400">[YOLO, SORT Kalman Filter, VIO, Gazebo SITL]</span>
+                <!-- Technical Explanation -->
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="space-y-1">
+                        <div class="text-xs mono text-indigo-400">Embodied Vision & Perception</div>
+                        <h3 class="text-2xl font-bold text-white">Closed-Loop Real-Time Target Acquisition Engine</h3>
                     </div>
 
                     <p class="text-slate-300 text-sm leading-relaxed">
-                        Engineered an onboard neural vision pipeline designed for dynamic target detection and continuous state estimation. Utilizing deep object detection paired with SORT (Kalman filtering), the system tracks moving agents, estimates 3D spatial velocity vector offsets, and feeds closed-loop trajectory setpoints directly into onboard flight controllers.
+                        Engineered an onboard neural vision pipeline for autonomous aerial intercept and dynamic target tracking. Operating on edge companion compute, the system performs low-latency neural object detection, maintains persistent tracking IDs via continuous SORT Kalman filtering, and outputs real-time 3D spatial velocity vector offsets directly to the PX4/ArduPilot position loop.
                     </p>
 
-                    <div class="grid grid-cols-2 gap-3 text-xs mono">
-                        <div class="p-3 border border-slate-800 rounded-lg bg-slate-900/60">
-                            <span class="text-slate-500 block text-[10px]">DETECTION & TRACKING</span>
-                            <span class="font-semibold text-indigo-300">YOLO + Deep SORT / Kalman</span>
+                    <!-- Technical Metrics Grid -->
+                    <div class="grid grid-cols-2 gap-4 text-xs mono">
+                        <div class="p-3.5 rounded-lg border border-slate-800 bg-slate-900/50">
+                            <span class="text-slate-500 block text-[10px]">INFERENCE & TRACKING</span>
+                            <span class="font-semibold text-indigo-300 mt-1 block">YOLO + Deep SORT / Kalman</span>
                         </div>
-                        <div class="p-3 border border-slate-800 rounded-lg bg-slate-900/60">
-                            <span class="text-slate-500 block text-[10px]">INFERENCE RUNTIME</span>
-                            <span class="font-semibold text-indigo-300">TensorRT / Edge Companion</span>
+                        <div class="p-3.5 rounded-lg border border-slate-800 bg-slate-900/50">
+                            <span class="text-slate-500 block text-[10px]">SIMULATION ENVIRONMENT</span>
+                            <span class="font-semibold text-indigo-300 mt-1 block">Gazebo & ArduPilot / PX4</span>
                         </div>
                     </div>
 
-                    <div class="text-xs mono space-x-4 pt-1">
-                        <a href="https://github.com/MadakiElisha" target="_blank" class="text-indigo-400 hover:underline">[View Vision Tracker Repository]</a>
+                    <div class="text-xs mono pt-2">
+                        <a href="https://github.com/MadakiElisha" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors inline-flex items-center gap-1">
+                            <span>[View Vision Tracker Source Code]</span>
+                            <span>→</span>
+                        </a>
                     </div>
                 </div>
             </article>
 
-            <!-- CASE STUDY 2: FIRMWARE VTOL NMPC / NNPC MODULE -->
-            <article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start border-b border-slate-800/80 pb-12">
-                <div class="md:col-span-5 space-y-3">
-                    <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden border border-slate-800">
-                        <img src="assets/vtol_nmpcIV.jpg" alt="VTOL NMPC Gazebo SITL Simulation" class="w-full h-full object-cover">
+            <!-- CASE STUDY 2: FIRMWARE-EMBEDDED NMPC / SINDy MODULE -->
+            <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start border-b border-slate-800/80 pb-16">
+                <!-- Visual Proof -->
+                <div class="lg:col-span-5 space-y-3">
+                    <div class="aspect-video bg-slate-950 rounded-lg overflow-hidden border border-slate-800 relative">
+                        <video autoplay loop muted playsinline poster="assets/vtol_nmpcIV.jpg" class="w-full h-full object-cover">
+                            <source src="assets/vtol_nmpcIV.mp4" type="video/mp4">
+                            <img src="assets/vtol_nmpcIV.jpg" alt="VTOL NMPC Gazebo SITL Simulation" class="w-full h-full object-cover">
+                        </video>
                     </div>
-                    <p class="text-[11px] text-slate-500 mono">Figure 2: `vtol_nmpc_control` executing live 4000µs trajectory optimization loops in PX4 Gazebo SITL.</p>
+                    <p class="text-[11px] text-slate-500 mono">Figure 2: `vtol_nmpc_control` executing live 4000µs hover trajectory optimization in PX4 Gazebo SITL.</p>
                 </div>
 
-                <div class="md:col-span-7 space-y-4">
-                    <div class="flex flex-wrap items-baseline justify-between gap-2">
-                        <h3 class="font-bold text-white text-xl">Bare-Metal VTOL NMPC & SINDy-MPC Controller</h3>
-                        <span class="text-xs mono text-indigo-400">[C++, PX4 Firmware, acados, SINDy, uORB]</span>
+                <!-- Technical Explanation -->
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="space-y-1">
+                        <div class="text-xs mono text-indigo-400">Bare-Metal Firmware & GNC</div>
+                        <h3 class="text-2xl font-bold text-white">Firmware-Native VTOL NMPC & Dynamic Solver Module</h3>
                     </div>
 
                     <p class="text-slate-300 text-sm leading-relaxed">
-                        Architected and integrated a real-time C++ flight control module (<code class="mono text-indigo-300">vtol_nmpc_control</code>) directly into the PX4 microsecond internal pipeline. The module replaces legacy PID loops with nonlinear model predictive control, utilizing data-driven physics identification (SINDy) to dynamically compensate for structural transition dynamics in quadplane VTOLs.
+                        Architected and integrated a real-time C++ control module (<code class="mono text-indigo-300">vtol_nmpc_control</code>) directly into the PX4 internal microsecond loop pipeline. Inheriting from <code class="mono text-indigo-300">px4::ScheduledWorkItem</code>, the module bypasses standard PID controllers to solve optimal quadplane VTOL transition dynamics on-the-fly using acados dynamic capsules.
                     </p>
 
+                    <!-- Code Snippet -->
                     <div class="text-[11px] mono">
-                        <div class="bg-slate-950 text-slate-400 px-3 py-1.5 rounded-t border-t border-x border-slate-800 font-medium flex justify-between">
+                        <div class="bg-slate-950 text-slate-400 px-4 py-2 rounded-t border-t border-x border-slate-800 font-medium flex justify-between items-center">
                             <span>src/modules/vtol_nmpc_control/vtol_nmpc_control.hpp</span>
-                            <span class="text-indigo-400 text-[10px]">PX4 C++ Microsecond Loop</span>
+                            <span class="text-indigo-400 text-[10px]">PX4 Microsecond Loop</span>
                         </div>
-                        <pre class="p-3 rounded-b border border-slate-800 text-[10px] overflow-x-auto leading-normal"><code>class VtolNmpcControl : public ModuleBase&lt;VtolNmpcControl&gt;, public ModuleParams, public px4::ScheduledWorkItem
+                        <pre class="p-4 rounded-b text-[11px] overflow-x-auto leading-relaxed"><code>class VtolNmpcControl : public ModuleBase&lt;VtolNmpcControl&gt;, public ModuleParams, public px4::ScheduledWorkItem
 {
 private:
     void Run() override;
     quadplane_nmpc_solver_capsule *_capsule{nullptr};
 
+    // Subscriptions to core PX4 microsecond uORB topics
     uORB::Subscription _local_pos_sub{ORB_ID(vehicle_local_position)};
     uORB::Subscription _attitude_sub{ORB_ID(vehicle_attitude)};
     uORB::Subscription _vtol_status_sub{ORB_ID(vtol_vehicle_status)};
     uORB::Subscription _trajectory_setpoint_sub{ORB_ID(trajectory_setpoint)};
 
+    // Direct motor actuator publication
     uORB::Publication&lt;actuator_motors_s&gt; _actuator_motors_pub{ORB_ID(actuator_motors)};
 };</code></pre>
                     </div>
 
-                    <div class="text-xs mono space-x-4 pt-1">
-                        <a href="https://github.com/MadakiElisha" target="_blank" class="text-indigo-400 hover:underline">[View PX4 NMPC Module Code]</a>
+                    <div class="text-xs mono pt-2">
+                        <a href="https://github.com/MadakiElisha" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors inline-flex items-center gap-1">
+                            <span>[View PX4 Firmware NMPC Source Code]</span>
+                            <span>→</span>
+                        </a>
                     </div>
                 </div>
             </article>
 
-            <!-- CASE STUDY 3: MAVLINK CRYPTOGRAPHIC TELEMETRY LAYER -->
-            <article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-                <div class="md:col-span-5 space-y-3">
-                    <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden border border-slate-800">
-                        <img src="assets/encrypt_demo.jpg" alt="PX4 MAVLink Handshake & Encryption Demo" class="w-full h-full object-cover">
+            <!-- CASE STUDY 3: CRYPTOGRAPHIC TELEMETRY & PROPRIETARY SDK -->
+            <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Visual Proof -->
+                <div class="lg:col-span-5 space-y-3">
+                    <div class="aspect-video bg-slate-950 rounded-lg overflow-hidden border border-slate-800 relative">
+                        <video autoplay loop muted playsinline poster="assets/encrypt_demo.jpg" class="w-full h-full object-cover">
+                            <source src="assets/encrypt_demo.mp4" type="video/mp4">
+                            <img src="assets/encrypt_demo.jpg" alt="PX4 MAVLink Cryptographic Demo" class="w-full h-full object-cover">
+                        </video>
                     </div>
-                    <p class="text-[11px] text-slate-500 mono">Figure 3: Real-time UDP link establishment, key exchange, and verified handshake challenge over MAVLink.</p>
+                    <p class="text-[11px] text-slate-500 mono">Figure 3: Real-time UDP socket creation, public key exchange, and verified handshake challenge over MAVLink.</p>
                 </div>
 
-                <div class="md:col-span-7 space-y-4">
-                    <div class="flex flex-wrap items-baseline justify-between gap-2">
-                        <h3 class="font-bold text-white text-xl">Firmware MAVLink Encryption & Proprietary SDK Layer</h3>
-                        <span class="text-xs mono text-indigo-400">[C++, PX4 MAVLink, AEAD, Fleet SDK]</span>
+                <!-- Technical Explanation -->
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="space-y-1">
+                        <div class="text-xs mono text-indigo-400">Security & Abstraction Architecture</div>
+                        <h3 class="text-2xl font-bold text-white">Cryptographic Telemetry Layer & Proprietary Fleet SDK</h3>
                     </div>
 
                     <p class="text-slate-300 text-sm leading-relaxed">
-                        Developed an onboard cryptographic module (<code class="mono text-indigo-300">MavlinkCrypt</code>) and proprietary SDK abstraction layer. Secures real-time command, control, and multi-agent swarm state exchanges over untrusted wireless links using AEAD encryption and secure key wiping.
+                        Developed an onboard firmware cryptographic engine (<code class="mono text-indigo-300">MavlinkCrypt</code>) and vehicle-agnostic SDK abstraction layer. Secures real-time command links and multi-agent swarm state transmissions over untrusted wireless channels using AEAD encryption with explicit, zero-latency memory wiping (<code class="mono text-indigo-300">crypto_wipe</code>) on session teardown.
                     </p>
 
+                    <!-- Code Snippet -->
                     <div class="text-[11px] mono">
-                        <div class="bg-slate-950 text-slate-400 px-3 py-1.5 rounded-t border-t border-x border-slate-800 font-medium flex justify-between">
+                        <div class="bg-slate-950 text-slate-400 px-4 py-2 rounded-t border-t border-x border-slate-800 font-medium flex justify-between items-center">
                             <span>src/modules/mavlink/mavlink_encryption.cpp</span>
-                            <span class="text-indigo-400 text-[10px]">PX4 C++ Implementation</span>
+                            <span class="text-indigo-400 text-[10px]">PX4 C++ Security Module</span>
                         </div>
-                        <pre class="p-3 rounded-b border border-slate-800 text-[10px] overflow-x-auto leading-normal"><code>MavlinkCrypt::~MavlinkCrypt()
+                        <pre class="p-4 rounded-b text-[11px] overflow-x-auto leading-relaxed"><code>MavlinkCrypt::~MavlinkCrypt()
 {
     // SAFE WIPING OF ALL ENCRYPTION KEYS FROM RAM UPON TEARDOWN
     crypto_wipe(_secret_key, 32);
@@ -304,8 +378,11 @@ private:
 }</code></pre>
                     </div>
 
-                    <div class="text-xs mono space-x-4 pt-1">
-                        <a href="https://github.com/MadakiElisha" target="_blank" class="text-indigo-400 hover:underline">[View MAVLink Crypto Code]</a>
+                    <div class="text-xs mono pt-2">
+                        <a href="https://github.com/MadakiElisha" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors inline-flex items-center gap-1">
+                            <span>[View MAVLink Crypto Layer Repository]</span>
+                            <span>→</span>
+                        </a>
                     </div>
                 </div>
             </article>
@@ -314,9 +391,10 @@ private:
 
     </main>
 
-    <footer class="mt-28 pt-8 border-t border-slate-800 text-xs mono text-slate-500 flex justify-between items-center">
+    <!-- FOOTER -->
+    <footer class="mt-32 pt-8 border-t border-slate-800/80 text-xs mono text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
         <span>© 2026 Elisha Madaki</span>
-        <span>Embedded Flight Software & Embodied AI Portfolio</span>
+        <span>Flight Software & Embodied AI Engineering</span>
     </footer>
 
 </body>
