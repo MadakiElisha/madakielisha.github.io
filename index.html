@@ -29,18 +29,18 @@
     <header class="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-between gap-10 mb-20 pb-12 border-b border-slate-800/80">
         <div class="space-y-6 max-w-3xl">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-indigo-400 text-xs mono">
-                Flight Software • NMPC Controls • Vehicle-Agnostic Autonomy
+                Flight Software • Embodied AI • Swarm Autonomy • NMPC / NNPC
             </div>
 
             <div>
                 <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">Elisha Madaki</h1>
-                <p class="text-lg text-slate-400 font-medium mt-2">
+                <p class="text-lg text-indigo-300 font-medium mt-2">
                     Embedded Flight Software & Embodied AI Engineer
                 </p>
             </div>
             
             <p class="text-slate-300 text-base leading-relaxed">
-                Advanced GNC: MPC (SINDy-MPC, NNPC), VIO | AI: RL, NNs, Computer Vision | Autopilot: PX4 & ArduPilot Core | Fleet Autonomy | Proprietary Drone SDKs.
+                <strong>Advanced GNC:</strong> NMPC (SINDy-MPC, NNPC), VIO • <strong>Embodied AI:</strong> Deep Reinforcement Learning, Neural Networks, Real-Time Vision • <strong>Autopilot Core:</strong> PX4 & ArduPilot Firmware Internals • <strong>Multi-Agent:</strong> Decentralized Fleet Swarms & Proprietary Drone SDKs.
             </p>
 
             <!-- Links -->
@@ -56,7 +56,7 @@
         <!-- Hero Photo -->
         <div class="flex-shrink-0">
             <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-xl overflow-hidden border border-slate-700 shadow-2xl relative">
-                <img src="me@pf2.jpg" alt="Elisha Madaki Hardware Lab" class="w-full h-full object-cover">
+                <img src="IMG_20250103_143141_521.jpeg" alt="Elisha Madaki Hardware Lab" class="w-full h-full object-cover">
                 <div class="absolute bottom-0 inset-x-0 bg-slate-950/80 text-[10px] mono text-center py-1 text-slate-400">
                     Hardware & Avionics Lab
                 </div>
@@ -66,15 +66,39 @@
 
     <main class="space-y-24">
 
-        <!-- CORE RESEARCH MANIFESTO -->
-        <section class="p-8 rounded-xl border border-slate-800 bg-slate-900/40 space-y-4">
-            <h2 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mono">Research Trajectory & Technical Scope</h2>
+        <!-- CORE RESEARCH & ENGINEERING MANIFESTO -->
+        <section class="p-8 rounded-xl border border-slate-800 bg-slate-900/40 space-y-6">
+            <div class="flex justify-between items-center border-b border-slate-800/80 pb-3">
+                <h2 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mono">Full-Stack Autonomy Architecture & Vision</h2>
+                <span class="text-[11px] mono text-slate-400">End-to-End Embodied Intelligence</span>
+            </div>
+            
             <p class="text-slate-300 text-base leading-relaxed">
-                Traditional autopilot stacks rely heavily on rigid, hand-tuned rule blocks for perception, planning, and control. Inspired by end-to-end embodied intelligence (Wayve, Skydreamer) and game-theoretic neural decision engines (AlphaGo), my work is now focusing on building <strong>vehicle-agnostic and environment-agnostic intelligence</strong>. By deploying lightweight, on-device neural models alongside microsecond flight control loops, aerial agents can dynamically evaluate unstructured environments, make decentralized decisions, and adapt onboard in real time.
+                Traditional flight control stacks rely heavily on rigid PID controllers, manual system identification, and pre-programmed waypoint handshakes. My work bridges the gap between <strong>bare-metal C++ flight loops</strong> and <strong>high-level embodied intelligence</strong>—developing adaptive, vehicle-agnostic autonomy systems capable of dynamic decision-making in GPS-denied or degraded environments.
             </p>
+
+            <!-- 4 CORE PILLARS GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800 space-y-2">
+                    <h3 class="text-sm font-semibold text-indigo-300 mono">1. Deep RL & Neural Control (NNPC / SINDy)</h3>
+                    <p class="text-xs text-slate-400">Replacing hand-tuned aerodynamics models with data-driven dynamic identification (SINDy-MPC) and continuous Deep Reinforcement Learning for aggressive trajectory planning and fault recovery.</p>
+                </div>
+                <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800 space-y-2">
+                    <h3 class="text-sm font-semibold text-indigo-300 mono">2. Multi-Agent & Swarm Fleet Autonomy</h3>
+                    <p class="text-xs text-slate-400">Architecting decentralized, vehicle-agnostic swarm protocols via ROS 2 and MAVLink, enabling autonomous collaborative search-and-rescue without continuous Ground Control Station link dependency.</p>
+                </div>
+                <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800 space-y-2">
+                    <h3 class="text-sm font-semibold text-indigo-300 mono">3. Advanced Neural Vision & VIO</h3>
+                    <p class="text-xs text-slate-400">Deploying hardware-accelerated deep object detection (YOLO/SORT), Visual-Inertial Odometry, and spatial state estimation directly onto edge companion computers.</p>
+                </div>
+                <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800 space-y-2">
+                    <h3 class="text-sm font-semibold text-indigo-300 mono">4. Autopilot Cores & Proprietary SDKs</h3>
+                    <p class="text-xs text-slate-400">Extending PX4 and ArduPilot base firmware to build exclusive, high-level proprietary drone SDKs, bare-metal C++ drivers, custom uORB modules, and encrypted GCS links.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- NEW DEDICATED SECTION: FIELD OPERATIONS & LAB INTEGRATION -->
+        <!-- FIELD OPERATIONS & LAB INTEGRATION SECTION -->
         <section class="space-y-8">
             <div class="border-b border-slate-800 pb-4">
                 <h2 class="text-2xl font-bold text-white tracking-tight">Field Operations, Lab Integration & Flight Ops</h2>
@@ -87,7 +111,7 @@
                 <!-- Card 1: Tarmac Pre-Flight Ops -->
                 <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
                     <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
-                        <img src="cri.jpg" alt="Runway Pre-Flight Operations" class="w-full h-full object-cover">
+                        <img src="assets/cri.jpg" alt="Runway Pre-Flight Operations" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h3 class="text-sm font-semibold text-white">Tarmac Pre-Flight Operations</h3>
@@ -98,7 +122,7 @@
                 <!-- Card 2: On-Vehicle Firmware Debugging -->
                 <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
                     <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
-                        <img src="me@uas2.jpg" alt="On-Vehicle Firmware Debugging" class="w-full h-full object-cover">
+                        <img src="assets/me@uas2.jpg" alt="On-Vehicle Firmware Debugging" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h3 class="text-sm font-semibold text-white">Direct On-Vehicle Flashing & SITL</h3>
@@ -109,29 +133,29 @@
                 <!-- Card 3: Lab Briefing & Systems Architecture -->
                 <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
                     <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
-                        <img src="me@pf1.jpg" alt="Lab Briefing and Demo" class="w-full h-full object-cover">
+                        <img src="assets/me@pf1.jpg" alt="Lab Briefing and Demo" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h3 class="text-sm font-semibold text-white">Lab Systems Briefing</h3>
-                        <p class="text-xs text-slate-400 mt-1">Demonstrating custom hardware testbeds, onboard sensors, and companion processing hardware.</p>
+                        <p class="text-xs text-slate-400 mt-1">Demonstrating custom hardware testbeds, onboard neural acceleration cards, and companion processing hardware.</p>
                     </div>
                 </div>
 
-                <!-- Card 4: 10-Inch Multirotor Testbed -->
+                <!-- Card 4: Multirotor Testbed Workbench -->
                 <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
                     <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
-                        <img src="quad.jpg" alt="10-inch Multirotor Testbed Workbench" class="w-full h-full object-cover">
+                        <img src="assets/quad.jpg" alt="10-inch Multirotor Testbed Workbench" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h3 class="text-sm font-semibold text-white">Multirotor Workbench Setup</h3>
-                        <p class="text-xs text-slate-400 mt-1">Bench-testing companion computers (Raspberry Pi/Jetson), custom receiver configurations, and control scripts.</p>
+                        <p class="text-xs text-slate-400 mt-1">Bench-testing 10-inch multirotor companion computers (Jetson/Raspberry Pi), receiver links, and real-time control scripts.</p>
                     </div>
                 </div>
 
                 <!-- Card 5: Field Line Telemetry -->
                 <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
                     <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
-                        <img src="me@uas3.jpg" alt="Field Telemetry Operations" class="w-full h-full object-cover">
+                        <img src="assets/me@uas3.jpg" alt="Field Telemetry Operations" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h3 class="text-sm font-semibold text-white">Flight Line Telemetry Monitoring</h3>
@@ -142,11 +166,11 @@
                 <!-- Card 6: Airframe Assembly & Hardware Inventory -->
                 <div class="bg-slate-900/60 rounded-xl overflow-hidden border border-slate-800 space-y-3 p-3 card-border">
                     <div class="aspect-video rounded-lg overflow-hidden bg-slate-950 relative">
-                        <img src="me@uas1.jpg" alt="Avionics and Airframe Development" class="w-full h-full object-cover">
+                        <img src="assets/me@uas1.jpg" alt="Avionics and Airframe Development" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h3 class="text-sm font-semibold text-white">Avionics & Airframe Development</h3>
-                        <p class="text-xs text-slate-400 mt-1">Integration of physical fuselages, power distribution boards, motor ESCs, and flight control units.</p>
+                        <h3 class="text-sm font-semibold text-white">Avionics & Airframe Integration</h3>
+                        <p class="text-xs text-slate-400 mt-1">Assembly and bench testing of physical fuselages, power distribution boards, motor ESCs, and flight control units.</p>
                     </div>
                 </div>
 
@@ -156,74 +180,74 @@
         <!-- FEATURED ENGINEERING CASE STUDIES -->
         <section class="space-y-16">
             <div class="border-b border-slate-800 pb-4">
-                <h2 class="text-2xl font-bold text-white tracking-tight">Engineering Case Studies & Code Architecture</h2>
-                <p class="text-xs text-slate-400 mono mt-1">PX4 firmware modules, C++ cryptographic layers, and dynamic control loops</p>
+                <h2 class="text-2xl font-bold text-white tracking-tight">System Architecture & Case Studies</h2>
+                <p class="text-xs text-slate-400 mono mt-1">End-to-End Embodied Vision, Firmware NMPC Modules, Decentralized Swarms & Security Layers</p>
             </div>
 
-            <!-- CASE STUDY 1: TARGET TRACKING & COMPUTER VISION -->
+            <!-- CASE STUDY 1: NEURAL TARGET TRACKING & VISION -->
             <article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start border-b border-slate-800/80 pb-12">
                 <div class="md:col-span-5 space-y-3">
                     <div class="grid grid-cols-1 gap-3">
                         <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden border border-slate-800">
-                            <img src="drone_tracker.jpg" alt="Drone Tracker Scanning Mode" class="w-full h-full object-cover">
+                            <img src="assets/drone_tracker.jpg" alt="Drone Tracker Scanning Mode" class="w-full h-full object-cover">
                         </div>
                         <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden border border-slate-800">
-                            <img src="drone_trackerII.jpg" alt="Drone Tracker Target Locked" class="w-full h-full object-cover">
+                            <img src="assets/drone_trackerII.jpg" alt="Drone Tracker Target Locked" class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <p class="text-[11px] text-slate-500 mono">Figure 1: Custom `Drone Tracker` scanning and multi-vehicle acquisition executing in Gazebo SITL.</p>
+                    <p class="text-[11px] text-slate-500 mono">Figure 1: Custom `Drone Tracker` multi-vehicle neural acquisition and SORT tracking executing in Gazebo SITL.</p>
                 </div>
 
                 <div class="md:col-span-7 space-y-4">
                     <div class="flex flex-wrap items-baseline justify-between gap-2">
-                        <h3 class="font-bold text-white text-xl">Target Acquisition & Tracking Pipeline</h3>
-                        <span class="text-xs mono text-indigo-400">[YOLO, SORT Kalman Filter, Gazebo SITL]</span>
+                        <h3 class="font-bold text-white text-xl">Real-Time Neural Vision & Multi-Target Tracker</h3>
+                        <span class="text-xs mono text-indigo-400">[YOLO, SORT Kalman Filter, VIO, Gazebo SITL]</span>
                     </div>
 
                     <p class="text-slate-300 text-sm leading-relaxed">
-                        Engineered a real-time computer vision tracking pipeline integrated with Gazebo simulation. The system performs multi-object target detection, assigns continuous tracking IDs, and outputs offsets to guide onboard autonomous position loops.
+                        Engineered an onboard neural vision pipeline designed for dynamic target detection and continuous state estimation. Utilizing deep object detection paired with SORT (Kalman filtering), the system tracks moving agents, estimates 3D spatial velocity vector offsets, and feeds closed-loop trajectory setpoints directly into onboard flight controllers.
                     </p>
 
                     <div class="grid grid-cols-2 gap-3 text-xs mono">
                         <div class="p-3 border border-slate-800 rounded-lg bg-slate-900/60">
-                            <span class="text-slate-500 block text-[10px]">TRACKER RUNTIME</span>
-                            <span class="font-semibold text-indigo-300">SORT / Kalman Filter</span>
+                            <span class="text-slate-500 block text-[10px]">DETECTION & TRACKING</span>
+                            <span class="font-semibold text-indigo-300">YOLO + Deep SORT / Kalman</span>
                         </div>
                         <div class="p-3 border border-slate-800 rounded-lg bg-slate-900/60">
-                            <span class="text-slate-500 block text-[10px]">SIMULATION LINK</span>
-                            <span class="font-semibold text-indigo-300">Gazebo & ArduPilot / PX4</span>
+                            <span class="text-slate-500 block text-[10px]">INFERENCE RUNTIME</span>
+                            <span class="font-semibold text-indigo-300">TensorRT / Edge Companion</span>
                         </div>
                     </div>
 
                     <div class="text-xs mono space-x-4 pt-1">
-                        <a href="https://github.com/MadakiElisha" target="_blank" class="text-indigo-400 hover:underline">[View Vision Tracker Source]</a>
+                        <a href="https://github.com/MadakiElisha" target="_blank" class="text-indigo-400 hover:underline">[View Vision Tracker Repository]</a>
                     </div>
                 </div>
             </article>
 
-            <!-- CASE STUDY 2: VTOL NMPC FIRMWARE MODULE -->
+            <!-- CASE STUDY 2: FIRMWARE VTOL NMPC / NNPC MODULE -->
             <article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start border-b border-slate-800/80 pb-12">
                 <div class="md:col-span-5 space-y-3">
                     <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden border border-slate-800">
-                        <img src="vtol_nmpcIV.jpg" alt="VTOL NMPC Gazebo SITL Simulation" class="w-full h-full object-cover">
+                        <img src="assets/vtol_nmpcIV.jpg" alt="VTOL NMPC Gazebo SITL Simulation" class="w-full h-full object-cover">
                     </div>
-                    <p class="text-[11px] text-slate-500 mono">Figure 2: `vtol_nmpc_control` executing live 4000µs hover trajectory optimization in PX4 Gazebo SITL.</p>
+                    <p class="text-[11px] text-slate-500 mono">Figure 2: `vtol_nmpc_control` executing live 4000µs trajectory optimization loops in PX4 Gazebo SITL.</p>
                 </div>
 
                 <div class="md:col-span-7 space-y-4">
                     <div class="flex flex-wrap items-baseline justify-between gap-2">
-                        <h3 class="font-bold text-white text-xl">Firmware-Embedded VTOL NMPC Controller</h3>
-                        <span class="text-xs mono text-indigo-400">[C++, PX4 Firmware, acados, uORB]</span>
+                        <h3 class="font-bold text-white text-xl">Bare-Metal VTOL NMPC & SINDy-MPC Controller</h3>
+                        <span class="text-xs mono text-indigo-400">[C++, PX4 Firmware, acados, SINDy, uORB]</span>
                     </div>
 
                     <p class="text-slate-300 text-sm leading-relaxed">
-                        Architected and integrated a custom C++ flight control module (<code class="mono text-indigo-300">vtol_nmpc_control</code>) directly into the PX4 firmware pipeline. Inheriting from <code class="mono text-indigo-300">px4::ScheduledWorkItem</code>, the module subscribes to uORB topics, updates an acados quadplane solver capsule, and publishes motor allocations.
+                        Architected and integrated a real-time C++ flight control module (<code class="mono text-indigo-300">vtol_nmpc_control</code>) directly into the PX4 microsecond internal pipeline. The module replaces legacy PID loops with nonlinear model predictive control, utilizing data-driven physics identification (SINDy) to dynamically compensate for structural transition dynamics in quadplane VTOLs.
                     </p>
 
                     <div class="text-[11px] mono">
                         <div class="bg-slate-950 text-slate-400 px-3 py-1.5 rounded-t border-t border-x border-slate-800 font-medium flex justify-between">
                             <span>src/modules/vtol_nmpc_control/vtol_nmpc_control.hpp</span>
-                            <span class="text-indigo-400 text-[10px]">PX4 C++ Header</span>
+                            <span class="text-indigo-400 text-[10px]">PX4 C++ Microsecond Loop</span>
                         </div>
                         <pre class="p-3 rounded-b border border-slate-800 text-[10px] overflow-x-auto leading-normal"><code>class VtolNmpcControl : public ModuleBase&lt;VtolNmpcControl&gt;, public ModuleParams, public px4::ScheduledWorkItem
 {
@@ -250,19 +274,19 @@ private:
             <article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
                 <div class="md:col-span-5 space-y-3">
                     <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden border border-slate-800">
-                        <img src="encrypt_demo.jpg" alt="PX4 MAVLink Handshake & Encryption Demo" class="w-full h-full object-cover">
+                        <img src="assets/encrypt_demo.jpg" alt="PX4 MAVLink Handshake & Encryption Demo" class="w-full h-full object-cover">
                     </div>
-                    <p class="text-[11px] text-slate-500 mono">Figure 3: Real-time UDP link establishment, public key exchange, and verified handshake challenge over MAVLink.</p>
+                    <p class="text-[11px] text-slate-500 mono">Figure 3: Real-time UDP link establishment, key exchange, and verified handshake challenge over MAVLink.</p>
                 </div>
 
                 <div class="md:col-span-7 space-y-4">
                     <div class="flex flex-wrap items-baseline justify-between gap-2">
-                        <h3 class="font-bold text-white text-xl">Firmware MAVLink Encryption Layer</h3>
-                        <span class="text-xs mono text-indigo-400">[C++, PX4 MAVLink, AEAD, Memory Zeroing]</span>
+                        <h3 class="font-bold text-white text-xl">Firmware MAVLink Encryption & Proprietary SDK Layer</h3>
+                        <span class="text-xs mono text-indigo-400">[C++, PX4 MAVLink, AEAD, Fleet SDK]</span>
                     </div>
 
                     <p class="text-slate-300 text-sm leading-relaxed">
-                        Developed an onboard cryptographic module (<code class="mono text-indigo-300">MavlinkCrypt</code>) to secure telemetry command links. Implemented authenticated encryption routines (<code class="mono text-indigo-300">crypto_aead_lock</code>), counter-based nonces, and safe memory zeroing (<code class="mono text-indigo-300">crypto_wipe</code>) upon session teardown.
+                        Developed an onboard cryptographic module (<code class="mono text-indigo-300">MavlinkCrypt</code>) and proprietary SDK abstraction layer. Secures real-time command, control, and multi-agent swarm state exchanges over untrusted wireless links using AEAD encryption and secure key wiping.
                     </p>
 
                     <div class="text-[11px] mono">
@@ -292,7 +316,7 @@ private:
 
     <footer class="mt-28 pt-8 border-t border-slate-800 text-xs mono text-slate-500 flex justify-between items-center">
         <span>© 2026 Elisha Madaki</span>
-        <span>Flight Software & Embodied AI Portfolio</span>
+        <span>Embedded Flight Software & Embodied AI Portfolio</span>
     </footer>
 
 </body>
