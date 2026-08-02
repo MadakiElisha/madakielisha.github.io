@@ -6,16 +6,16 @@
     <title>Elisha Madaki — Flight Software & Autonomy Engineer</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Research & Autonomy Typography: Inter + Fira Code -->
+    <!-- Typography: Public Sans (civic/technical grotesk) + JetBrains Mono (data/code) + Newsreader (one italic accent line) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Public+Sans:wght@300;400;500;600;700;800&family=Newsreader:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-color: #FAF9F4;
             --card-bg: #F1EEE6;
             --border-color: #DAD5C7;
-            --text-primary: #c9d1d9;
+            --text-primary: #3A362E;
             --text-white: #1C1A16;
             --accent-blue: #1B4B8F;
             --accent-purple: #B0501C;
@@ -67,15 +67,15 @@
 <body class="max-w-5xl mx-auto px-5 py-10 sm:py-16 selection:bg-[#1B4B8F] selection:text-[#FAF9F4]">
 
     <!-- HEADER / PROFILE SECTION -->
-    <header class="flex flex-col-reverse md:flex-row items-start justify-between gap-8 pb-10 mb-12 border-b border-[#30363d]">
+    <header class="flex flex-col-reverse md:flex-row items-start justify-between gap-8 pb-10 mb-12 border-b border-[#DAD5C7]">
         <div class="space-y-4 max-w-3xl">
             <div>
-                <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-[#f0f6fc]">Elisha Madaki</h1>
+                <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-[#1C1A16]">Elisha Madaki</h1>
                 <p class="text-base text-[#1B4B8F] font-medium mt-1 mono">
                     Flight Software & Autonomy Engineer (UAS & Robotics)
                 </p>
-                <div class="text-xs text-[#bc8cff] mono mt-1">
-                    Embodied Intelligence • Neural Control Policies • Multi-Agent Swarms
+                <div class="text-xs text-[#B0501C] mono mt-1">
+                    <span class="text-[#6B6558]">Research Interests:</span> Embodied Intelligence • Reinforcement Learning • World Models • Deep RL Policies
                 </div>
                 <p class="text-lg sm:text-xl text-[#1C1A16] font-medium mt-4 leading-snug" style="font-family: 'Newsreader', serif; font-style: italic;">
                     Moving autonomy from reactive control to embodied intelligence.
@@ -110,23 +110,24 @@
             <ul class="space-y-2.5 text-sm">
                 <li class="flex items-baseline gap-2">
                     <span class="mono text-[#B0501C]">▸</span>
-                    <span><span class="font-semibold text-[#f0f6fc]">Neural MPC & Deep RL Control Policies</span><span class="text-[#8b949e]"> — NNPC and RL policies running inside the flight loop for trajectory synthesis and aerodynamic adaptation.</span></span>
+                    <span><span class="font-semibold text-[#1C1A16]">Neural MPC & Deep RL Control Policies</span><span class="text-[#6B6558]"> — NNPC and RL policies running inside the flight loop for trajectory synthesis and aerodynamic adaptation.</span></span>
                 </li>
                 <li class="flex items-baseline gap-2">
                     <span class="mono text-[#B0501C]">▸</span>
-                    <span><span class="font-semibold text-[#f0f6fc]">Onboard Edge NNs</span><span class="text-[#8b949e]"> — real-time object detection (YOLO), visual tracking (DeepSORT), and VIO state estimation for GPS-denied flight.</span></span>
+                    <span><span class="font-semibold text-[#1C1A16]">Onboard Edge NNs</span><span class="text-[#6B6558]"> — real-time object detection (YOLO), visual tracking (DeepSORT), and VIO state estimation for GPS-denied flight.</span></span>
                 </li>
                 <li class="flex items-baseline gap-2">
                     <span class="mono text-[#B0501C]">▸</span>
-                    <span><span class="font-semibold text-[#f0f6fc]">Decentralized Swarm Autonomy</span><span class="text-[#8b949e]"> — ROS 2 multi-UAV coordination with state consensus and inter-agent negotiation.</span></span>
+                    <span><span class="font-semibold text-[#1C1A16]">Decentralized Swarm Autonomy</span><span class="text-[#6B6558]"> — ROS 2 multi-UAV coordination with state consensus and inter-agent negotiation.</span></span>
                 </li>
                 <li class="flex items-baseline gap-2">
                     <span class="mono text-[#B0501C]">▸</span>
-                    <span><span class="font-semibold text-[#f0f6fc]">Security</span><span class="text-[#8b949e]"> — AEAD telemetry encryption and secure memory wiping in flight firmware.</span></span>
+                    <span><span class="font-semibold text-[#1C1A16]">Security</span><span class="text-[#6B6558]"> — AEAD telemetry encryption and secure memory wiping in flight firmware.</span></span>
                 </li>
             </ul>
         </section>
- <!-- BACKGROUND: EXPERIENCE & EDUCATION -->
+
+        <!-- BACKGROUND: EXPERIENCE & EDUCATION -->
         <section class="space-y-3">
             <h2 class="text-xs font-bold text-[#6B6558] uppercase tracking-wider mono">Background</h2>
             <ul class="text-sm divide-y divide-[#E4DFD1]">
@@ -135,11 +136,11 @@
                     <span class="mono text-xs text-[#6B6558] whitespace-nowrap">2025</span>
                 </li>
                 <li class="flex justify-between gap-4 py-2">
-                    <span><span class="text-[#1C1A16] font-medium">Software & Autonomy Engineer</span><span class="text-[#6B6558]"> — ProForce AirSystems Limited, Ogun, Nigeria</span></span>
+                    <span><span class="text-[#1C1A16] font-medium">Software & Autonomy Engineer</span><span class="text-[#6B6558]"> — ProForce Air Systems Limited</span></span>
                     <span class="mono text-xs text-[#6B6558] whitespace-nowrap">2024–2025</span>
                 </li>
                 <li class="flex justify-between gap-4 py-2">
-                    <span><span class="text-[#1C1A16] font-medium">Engineer</span><span class="text-[#6B6558]"> — Ministry of Aviation & Aerospace, Abuja, Nigeria</span></span>
+                    <span><span class="text-[#1C1A16] font-medium">Graduate Engineer</span><span class="text-[#6B6558]"> — Ministry of Aviation & Aerospace Development, Abuja, Nigeria</span></span>
                     <span class="mono text-xs text-[#6B6558] whitespace-nowrap">2024</span>
                 </li>
                 <li class="flex justify-between gap-4 py-2">
@@ -152,8 +153,6 @@
                 </li>
             </ul>
         </section>
-        
-        <!-- FEATURED PROJECTS / RESEARCH WORK -->
         <section class="space-y-8">
             <div class="border-b border-[#DAD5C7] pb-2">
                 <h2 class="text-lg font-bold text-[#1C1A16]">Some projects & Research Work</h2>
@@ -166,16 +165,16 @@
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
                         <!-- Media Loop -->
                         <div class="md:col-span-5 space-y-2">
-                            <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#30363d] relative">
+                            <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#DAD5C7] relative">
                                 <video autoplay loop muted playsinline poster="assets/drone_tracker.jpg" class="w-full h-full object-cover">
                                     <source src="assets/drone_tracker.mp4" type="video/mp4">
                                     <img src="assets/drone_tracker.png" alt="Drone Tracker Scanning Mode" class="w-full h-full object-cover">
                                 </video>
                             </div>
-                            <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#30363d] relative">
+                            <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#DAD5C7] relative">
                                 <img src="assets/drone_tracker.png" alt="Drone Tracker" class="w-full h-full object-cover">
                             </div>
-                            <span class="text-[10px] mono text-[#8b949e] block">Fig 1: Closed-loop neural vision pipeline in Gazebo SITL.</span>
+                            <span class="text-[10px] mono text-[#6B6558] block">Fig 1: Closed-loop neural vision pipeline in Gazebo SITL.</span>
                         </div>
 
                         <!-- Content -->
@@ -186,21 +185,21 @@
                                 Edge computer vision pipeline for target tracking and autonomous interception. Operates real-time object detection models (YOLO) coupled with continuous SORT Kalman tracking to stream 3D spatial velocity vectors into the vehicle position control loops without offboard computing. Validated in SITL and deployed on hardware.
                             </p>
                             
-                            <div class="flex flex-wrap gap-2 text-[11px] mono text-[#58a6ff]">
-                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#30363d]">YOLO Neural Net</span>
-                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#30363d]">Deep SORT</span>
-                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#30363d]">Kalman Filter</span>
-                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#30363d]">Gazebo SITL</span>
+                            <div class="flex flex-wrap gap-2 text-[11px] mono text-[#1B4B8F]">
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">YOLO Neural Net</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">Deep SORT</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">Kalman Filter</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">Gazebo SITL</span>
                             </div>
 
                             <div class="pt-2 text-xs mono space-x-3">
-                                <a href="https://github.com/MadakiElisha" target="_blank" class="research-link">[Code]</a>
+                                <a href="https://github.com/MadakiElisha" target="_blank" class="research-link">[Source Code]</a>
+                                <a href="#" class="research-link">[Architecture PDF]</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-              
                 <!-- PROJECT 2: FIRMWARE-EMBEDDED NEURAL MPC -->
                 <div class="project-card p-5 space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
