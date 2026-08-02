@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elisha Madaki — Embedded Flight Software & Autonomy Engineer</title>
+    <title>Elisha Madaki — Flight Software & Autonomy Engineer (UAS & Robotics)</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Research & Autonomy Typography: Inter + Fira Code -->
@@ -72,22 +72,24 @@
             <div>
                 <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-[#f0f6fc]">Elisha Madaki</h1>
                 <p class="text-base text-[#58a6ff] font-medium mt-1 mono">
-                    Embedded Flight Software & Autonomy Engineer
+                    Flight Software & Autonomy Engineer
                 </p>
                 <div class="text-xs text-[#bc8cff] mono mt-1">
                     Embodied Intelligence • Neural Control Policies • Multi-Agent Swarms
                 </div>
+                <p class="text-lg sm:text-xl text-[#e6edf3] font-medium mt-4 leading-snug">
+                    Moving autonomy from reactive control to embodied intelligence.
+                </p>
             </div>
             
             <p class="text-sm text-[#8b949e] leading-relaxed">
-                Engineering vehicle-agnostic autonomy systems at the boundary of bare-metal C++ flight software and real-time embodied intelligence. Specializing in deep neural perception, Neural Network Predictive Control (NNPC), Deep Reinforcement Learning (RL) for dynamic flight, and decentralized swarm intelligence for uncrewed aerial systems.
+                Engineering vehicle-agnostic autonomy systems at the intersection of bare-metal C++ software and real-time embodied intelligence. Finding my way around deep neural perception, Neural Network Predictive Control (NNPC), Deep Reinforcement Learning (RL) for dynamic systems, and decentralized swarm intelligence with some work validated in SITL and select modules running on hardware.
             </p>
 
             <!-- Links -->
             <div class="flex flex-wrap gap-4 text-xs mono pt-1">
                 <a href="https://github.com/MadakiElisha" target="_blank" class="research-link">[GitHub]</a>
-                <a href="https://linkedin.com" target="_blank" class="research-link">[LinkedIn]</a>
-                <a href="mailto:elisha@example.com" class="research-link">[Email]</a>
+                <a href="mailto:stefanelisha@gmail.com" class="research-link">[Email]</a>
                 <a href="#" class="research-link">[CV / Resume]</a>
             </div>
         </div>
@@ -104,34 +106,25 @@
 
         <!-- TECHNICAL FOCUS: AUTONOMY, NNS & EMBODIED INTELLIGENCE -->
         <section class="space-y-4">
-            <h2 class="text-xs font-bold text-[#8b949e] uppercase tracking-wider mono">// Autonomy & Intelligence Thrusts</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-                
-                <div class="p-4 rounded border border-[#30363d] bg-[#161b22] space-y-1">
-                    <div class="text-[10px] mono text-[#bc8cff]">NEURAL DYNAMICS & CONTROL</div>
-                    <span class="font-bold text-[#f0f6fc] block text-sm">Neural MPC & Deep RL Control Policies</span>
-                    <p class="text-[#8b949e]">Deploying Neural Network Predictive Control (NNPC) and Deep Reinforcement Learning policies directly into microsecond flight loops for dynamic trajectory synthesis and aerodynamic adaptation.</p>
-                </div>
-
-                <div class="p-4 rounded border border-[#30363d] bg-[#161b22] space-y-1">
-                    <div class="text-[10px] mono text-[#bc8cff]">EMBODIED PERCEPTION</div>
-                    <span class="font-bold text-[#f0f6fc] block text-sm">Onboard Edge NNs & Spatial Vision</span>
-                    <p class="text-[#8b949e]">Hardware-accelerated neural object detection (YOLO), deep visual target tracking (DeepSORT), and VIO state estimation for GPS-denied autonomous setpoint generation.</p>
-                </div>
-
-                <div class="p-4 rounded border border-[#30363d] bg-[#161b22] space-y-1">
-                    <div class="text-[10px] mono text-[#bc8cff]">MULTI-AGENT INTELLIGENCE</div>
-                    <span class="font-bold text-[#f0f6fc] block text-sm">Decentralized Swarm Autonomy</span>
-                    <p class="text-[#8b949e]">ROS 2 multi-UAV swarm architectures, vehicle-agnostic state consensus, autonomous inter-agent negotiation, and ground-station-independent search operations.</p>
-                </div>
-
-                <div class="p-4 rounded border border-[#30363d] bg-[#161b22] space-y-1">
-                    <div class="text-[10px] mono text-[#bc8cff]">AUTOPILOT CORE & FIRMWARE</div>
-                    <span class="font-bold text-[#f0f6fc] block text-sm">C++ Autopilot SDKs & Cryptography</span>
-                    <p class="text-[#8b949e]">Bare-metal PX4/ArduPilot custom uORB modules, proprietary flight SDK abstractions, and zero-trust telemetry encryption (AEAD) with secure memory wiping.</p>
-                </div>
-
-            </div>
+            <h2 class="text-xs font-bold text-[#8b949e] uppercase tracking-wider mono">Autonomy & Intelligence Thrusts</h2>
+            <ul class="space-y-2.5 text-sm">
+                <li class="flex items-baseline gap-2">
+                    <span class="mono text-[#bc8cff]">▸</span>
+                    <span><span class="font-semibold text-[#f0f6fc]">Neural MPC & Deep RL Control Policies</span><span class="text-[#8b949e]"> — NNPC and RL policies running inside the flight loop for trajectory synthesis and aerodynamic adaptation.</span></span>
+                </li>
+                <li class="flex items-baseline gap-2">
+                    <span class="mono text-[#bc8cff]">▸</span>
+                    <span><span class="font-semibold text-[#f0f6fc]">Onboard Edge NNs</span><span class="text-[#8b949e]"> — real-time object detection (YOLO), visual tracking (DeepSORT), and VIO state estimation for GPS-denied flight.</span></span>
+                </li>
+                <li class="flex items-baseline gap-2">
+                    <span class="mono text-[#bc8cff]">▸</span>
+                    <span><span class="font-semibold text-[#f0f6fc]">Decentralized Swarm Autonomy</span><span class="text-[#8b949e]"> — ROS 2 multi-UAV coordination with state consensus and inter-agent negotiation.</span></span>
+                </li>
+                <li class="flex items-baseline gap-2">
+                    <span class="mono text-[#bc8cff]">▸</span>
+                    <span><span class="font-semibold text-[#f0f6fc]">Security</span><span class="text-[#8b949e]"> — AEAD telemetry encryption and secure memory wiping in flight firmware.</span></span>
+                </li>
+            </ul>
         </section>
 
         <!-- FEATURED PROJECTS / RESEARCH WORK -->
@@ -162,9 +155,9 @@
                         <!-- Content -->
                         <div class="md:col-span-7 space-y-3">
                             <div class="text-xs mono text-[#bc8cff]">Vision & Intelligence</div>
-                            <h3 class="text-base font-bold text-[#f0f6fc]">Onboard Neural Object Detection & Real-Time Tracking Engine</h3>
+                            <h3 class="text-base font-bold text-[#f0f6fc]">Onboard Detection & Real-Time Tracking Engine</h3>
                             <p class="text-xs text-[#8b949e] leading-relaxed">
-                                Engineered an edge neural computer vision pipeline for target tracking and autonomous interception. Operates real-time object detection models (YOLO) coupled with continuous SORT Kalman tracking to stream 3D spatial velocity vectors into the vehicle position control loops without offboard computing.
+                                Edge computer vision pipeline for target tracking and autonomous interception. Operates real-time object detection models (YOLO) coupled with continuous SORT Kalman tracking to stream 3D spatial velocity vectors into the vehicle position control loops without offboard computing. Validated in SITL and deployed on hardware.
                             </p>
                             
                             <div class="flex flex-wrap gap-2 text-[11px] mono text-[#58a6ff]">
@@ -201,7 +194,7 @@
                             <div class="text-xs mono text-[#bc8cff]">Control & Physics</div>
                             <h3 class="text-base font-bold text-[#f0f6fc]">Firmware-Embedded VTOL Nonlinear MPC & Solver</h3>
                             <p class="text-xs text-[#8b949e] leading-relaxed">
-                                Integrated a real-time C++ control module (<code class="mono text-[#58a6ff]">vtol_nmpc_control</code>) directly inside PX4 firmware. Bypasses static gains by leveraging acados solvers and data-driven dynamic identification (SINDy) to optimize complex multi-rotor transition trajectories on flight hardware.
+                                Real-time C++ control module (<code class="mono text-[#58a6ff]">vtol_nmpc_control</code>) directly inside PX4 firmware. Replaces static gains with acados solvers and data-driven dynamic identification (SINDy) to optimize complex multi-rotor transition trajectories on flight hardware.
                             </p>
 
                             <!-- Snippet -->
@@ -243,7 +236,7 @@ private:
                                     <img src="assets/encrypt_demo.png" alt="PX4 Encryption Demo" class="w-full h-full object-cover">
                                 </video>
                             </div>
-                            <span class="text-[10px] mono text-[#8b949e] block">Fig 3: Verified AEAD cryptographic key exchange over MAVLink.</span>
+                            <span class="text-[10px] mono text-[#8b949e] block">Fig 3: Key exchange over MAVLink.</span>
                         </div>
 
                         <!-- Content -->
@@ -251,7 +244,7 @@ private:
                             <div class="text-xs mono text-[#bc8cff]">Security</div>
                             <h3 class="text-base font-bold text-[#f0f6fc]">Cryptographic Telemetry Layer</h3>
                             <p class="text-xs text-[#8b949e] leading-relaxed">
-                                Embedded zero-trust AEAD encryption (<code class="mono text-[#58a6ff]">MavlinkCrypt</code>) into firmware telemetry links. Features automated memory zeroing (<code class="mono text-[#58a6ff]">crypto_wipe</code>) upon session teardown to protect data.
+                                Zero-trust AEAD encryption (<code class="mono text-[#58a6ff]">MavlinkCrypt</code>) embedded into firmware telemetry links, with automated memory zeroing (<code class="mono text-[#58a6ff]">crypto_wipe</code>) on session teardown.
                             </p>
 
                             <!-- Snippet -->
