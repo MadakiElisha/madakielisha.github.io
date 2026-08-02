@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elisha Madaki — Flight Software & Autonomy Engineer (UAS & Robotics)</title>
+    <title>Elisha Madaki — Flight Software & Autonomy Engineer</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Research & Autonomy Typography: Inter + Fira Code -->
@@ -12,34 +12,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --border-color: #30363d;
+            --bg-color: #FAF9F4;
+            --card-bg: #F1EEE6;
+            --border-color: #DAD5C7;
             --text-primary: #c9d1d9;
-            --text-white: #f0f6fc;
-            --accent-blue: #58a6ff;
-            --accent-purple: #bc8cff;
+            --text-white: #1C1A16;
+            --accent-blue: #1B4B8F;
+            --accent-purple: #B0501C;
         }
 
         body { 
             background-color: var(--bg-color); 
             color: var(--text-primary); 
-            font-family: 'Inter', -apple-system, sans-serif; 
+            font-family: 'Public Sans', -apple-system, sans-serif; 
             line-height: 1.6; 
             -webkit-font-smoothing: antialiased;
         }
 
-        .mono { font-family: 'Fira Code', monospace; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
 
         a.research-link {
             color: var(--accent-blue);
-            font-family: 'Fira Code', monospace;
+            font-family: 'JetBrains Mono', monospace;
             font-size: 0.825rem;
             text-decoration: none;
             transition: color 0.15s ease;
         }
         a.research-link:hover {
-            color: #79c0ff;
+            color: #2C63B0;
             text-decoration: underline;
         }
 
@@ -50,7 +50,7 @@
             transition: border-color 0.2s ease;
         }
         .project-card:hover {
-            border-color: #8b949e;
+            border-color: #6B6558;
         }
 
         pre { 
@@ -64,25 +64,25 @@
         }
     </style>
 </head>
-<body class="max-w-5xl mx-auto px-5 py-10 sm:py-16 selection:bg-blue-600 selection:text-white">
+<body class="max-w-5xl mx-auto px-5 py-10 sm:py-16 selection:bg-[#1B4B8F] selection:text-[#FAF9F4]">
 
     <!-- HEADER / PROFILE SECTION -->
     <header class="flex flex-col-reverse md:flex-row items-start justify-between gap-8 pb-10 mb-12 border-b border-[#30363d]">
         <div class="space-y-4 max-w-3xl">
             <div>
                 <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-[#f0f6fc]">Elisha Madaki</h1>
-                <p class="text-base text-[#58a6ff] font-medium mt-1 mono">
-                    Flight Software & Autonomy Engineer
+                <p class="text-base text-[#1B4B8F] font-medium mt-1 mono">
+                    Flight Software & Autonomy Engineer (UAS & Robotics)
                 </p>
                 <div class="text-xs text-[#bc8cff] mono mt-1">
                     Embodied Intelligence • Neural Control Policies • Multi-Agent Swarms
                 </div>
-                <p class="text-lg sm:text-xl text-[#e6edf3] font-medium mt-4 leading-snug">
+                <p class="text-lg sm:text-xl text-[#1C1A16] font-medium mt-4 leading-snug" style="font-family: 'Newsreader', serif; font-style: italic;">
                     Moving autonomy from reactive control to embodied intelligence.
                 </p>
             </div>
             
-            <p class="text-sm text-[#8b949e] leading-relaxed">
+            <p class="text-sm text-[#6B6558] leading-relaxed">
                 Engineering vehicle-agnostic autonomy systems at the intersection of bare-metal C++ software and real-time embodied intelligence. Finding my way around deep neural perception, Neural Network Predictive Control (NNPC), Deep Reinforcement Learning (RL) for dynamic systems, and decentralized swarm intelligence with some work validated in SITL and select modules running on hardware.
             </p>
 
@@ -96,7 +96,7 @@
 
         <!-- Circular Profile Photo (Root Path) -->
         <div class="flex-shrink-0">
-            <div class="w-36 h-36 sm:w-40 sm:h-40 rounded-full overflow-hidden border-2 border-[#30363d] bg-[#161b22] shadow-xl">
+            <div class="w-36 h-36 sm:w-40 sm:h-40 rounded-full overflow-hidden border-2 border-[#DAD5C7] bg-[#F1EEE6] shadow-xl">
                 <img src="IMG_20250103_143141_521.jpeg" alt="Elisha Madaki" class="w-full h-full object-cover">
             </div>
         </div>
@@ -106,31 +106,57 @@
 
         <!-- TECHNICAL FOCUS: AUTONOMY, NNS & EMBODIED INTELLIGENCE -->
         <section class="space-y-4">
-            <h2 class="text-xs font-bold text-[#8b949e] uppercase tracking-wider mono">Autonomy & Intelligence Thrusts</h2>
+            <h2 class="text-xs font-bold text-[#6B6558] uppercase tracking-wider mono">Autonomy & Intelligence Thrusts</h2>
             <ul class="space-y-2.5 text-sm">
                 <li class="flex items-baseline gap-2">
-                    <span class="mono text-[#bc8cff]">▸</span>
+                    <span class="mono text-[#B0501C]">▸</span>
                     <span><span class="font-semibold text-[#f0f6fc]">Neural MPC & Deep RL Control Policies</span><span class="text-[#8b949e]"> — NNPC and RL policies running inside the flight loop for trajectory synthesis and aerodynamic adaptation.</span></span>
                 </li>
                 <li class="flex items-baseline gap-2">
-                    <span class="mono text-[#bc8cff]">▸</span>
+                    <span class="mono text-[#B0501C]">▸</span>
                     <span><span class="font-semibold text-[#f0f6fc]">Onboard Edge NNs</span><span class="text-[#8b949e]"> — real-time object detection (YOLO), visual tracking (DeepSORT), and VIO state estimation for GPS-denied flight.</span></span>
                 </li>
                 <li class="flex items-baseline gap-2">
-                    <span class="mono text-[#bc8cff]">▸</span>
+                    <span class="mono text-[#B0501C]">▸</span>
                     <span><span class="font-semibold text-[#f0f6fc]">Decentralized Swarm Autonomy</span><span class="text-[#8b949e]"> — ROS 2 multi-UAV coordination with state consensus and inter-agent negotiation.</span></span>
                 </li>
                 <li class="flex items-baseline gap-2">
-                    <span class="mono text-[#bc8cff]">▸</span>
+                    <span class="mono text-[#B0501C]">▸</span>
                     <span><span class="font-semibold text-[#f0f6fc]">Security</span><span class="text-[#8b949e]"> — AEAD telemetry encryption and secure memory wiping in flight firmware.</span></span>
                 </li>
             </ul>
         </section>
-
+ <!-- BACKGROUND: EXPERIENCE & EDUCATION -->
+        <section class="space-y-3">
+            <h2 class="text-xs font-bold text-[#6B6558] uppercase tracking-wider mono">Background</h2>
+            <ul class="text-sm divide-y divide-[#E4DFD1]">
+                <li class="flex justify-between gap-4 py-2">
+                    <span><span class="text-[#1C1A16] font-medium">Software & Autonomy Engineer</span><span class="text-[#6B6558]"> — Briech UAS, Abuja, Nigeria</span></span>
+                    <span class="mono text-xs text-[#6B6558] whitespace-nowrap">2025</span>
+                </li>
+                <li class="flex justify-between gap-4 py-2">
+                    <span><span class="text-[#1C1A16] font-medium">Software & Autonomy Engineer</span><span class="text-[#6B6558]"> — ProForce AirSystems Limited, Ogun, Nigeria</span></span>
+                    <span class="mono text-xs text-[#6B6558] whitespace-nowrap">2024–2025</span>
+                </li>
+                <li class="flex justify-between gap-4 py-2">
+                    <span><span class="text-[#1C1A16] font-medium">Engineer</span><span class="text-[#6B6558]"> — Ministry of Aviation & Aerospace, Abuja, Nigeria</span></span>
+                    <span class="mono text-xs text-[#6B6558] whitespace-nowrap">2024</span>
+                </li>
+                <li class="flex justify-between gap-4 py-2">
+                    <span><span class="text-[#1C1A16] font-medium">Research Engineer, Autopilots</span><span class="text-[#6B6558]"> — Air Force Research & Development Centre, Kaduna, Nigeria</span></span>
+                    <span class="mono text-xs text-[#6B6558] whitespace-nowrap">2022–2023</span>
+                </li>
+                <li class="flex justify-between gap-4 py-2">
+                    <span><span class="text-[#1C1A16] font-medium">B.Eng. Aerospace Engineering</span><span class="text-[#6B6558]"> — Air Force Institute of Technology, Kaduna, Nigeria</span></span>
+                    <span class="mono text-xs text-[#6B6558] whitespace-nowrap">2018–2023</span>
+                </li>
+            </ul>
+        </section>
+        
         <!-- FEATURED PROJECTS / RESEARCH WORK -->
         <section class="space-y-8">
-            <div class="border-b border-[#30363d] pb-2">
-                <h2 class="text-lg font-bold text-[#f0f6fc]">Some projects & Research Work</h2>
+            <div class="border-b border-[#DAD5C7] pb-2">
+                <h2 class="text-lg font-bold text-[#1C1A16]">Some projects & Research Work</h2>
             </div>
 
             <div class="space-y-8">
@@ -154,47 +180,47 @@
 
                         <!-- Content -->
                         <div class="md:col-span-7 space-y-3">
-                            <div class="text-xs mono text-[#bc8cff]">Vision & Intelligence</div>
-                            <h3 class="text-base font-bold text-[#f0f6fc]">Onboard Detection & Real-Time Tracking Engine</h3>
-                            <p class="text-xs text-[#8b949e] leading-relaxed">
+                            <div class="text-xs mono text-[#B0501C]">Vision & Intelligence</div>
+                            <h3 class="text-base font-bold text-[#1C1A16]">Onboard Detection & Real-Time Tracking Engine</h3>
+                            <p class="text-xs text-[#6B6558] leading-relaxed">
                                 Edge computer vision pipeline for target tracking and autonomous interception. Operates real-time object detection models (YOLO) coupled with continuous SORT Kalman tracking to stream 3D spatial velocity vectors into the vehicle position control loops without offboard computing. Validated in SITL and deployed on hardware.
                             </p>
                             
                             <div class="flex flex-wrap gap-2 text-[11px] mono text-[#58a6ff]">
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">YOLO Neural Net</span>
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">Deep SORT</span>
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">Kalman Filter</span>
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">Gazebo SITL</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#30363d]">YOLO Neural Net</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#30363d]">Deep SORT</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#30363d]">Kalman Filter</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#30363d]">Gazebo SITL</span>
                             </div>
 
                             <div class="pt-2 text-xs mono space-x-3">
-                                <a href="https://github.com/MadakiElisha" target="_blank" class="research-link">[Source Code]</a>
-                                <a href="#" class="research-link">[Architecture PDF]</a>
+                                <a href="https://github.com/MadakiElisha" target="_blank" class="research-link">[Code]</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+              
                 <!-- PROJECT 2: FIRMWARE-EMBEDDED NEURAL MPC -->
                 <div class="project-card p-5 space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
                         <!-- Media Loop -->
                         <div class="md:col-span-5 space-y-2">
-                            <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#30363d] relative">
+                            <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#DAD5C7] relative">
                                 <video autoplay loop muted playsinline poster="assets/vtol_nmpcIV.jpg" class="w-full h-full object-cover">
                                     <source src="assets/vtol_nmpcIV.mp4" type="video/mp4">
                                     <img src="assets/vtol_nmpcIV.png" alt="VTOL NMPC Simulation" class="w-full h-full object-cover">
                                 </video>
                             </div>
-                            <span class="text-[10px] mono text-[#8b949e] block">Fig 2: Real-time C++ NMPC trajectory optimization in SITL.</span>
+                            <span class="text-[10px] mono text-[#6B6558] block">Fig 2: Real-time C++ NMPC trajectory optimization in SITL.</span>
                         </div>
 
                         <!-- Content -->
                         <div class="md:col-span-7 space-y-3">
-                            <div class="text-xs mono text-[#bc8cff]">Control & Physics</div>
-                            <h3 class="text-base font-bold text-[#f0f6fc]">Firmware-Embedded VTOL Nonlinear MPC & Solver</h3>
-                            <p class="text-xs text-[#8b949e] leading-relaxed">
-                                Led a team in the development of a Real-time C++ control module (<code class="mono text-[#58a6ff]">vtol_nmpc_control</code>) directly inside PX4 firmware. Replaces static gains with acados solvers and data-driven dynamic identification (SINDy) to optimize complex multi-rotor transition trajectories on flight hardware.
+                            <div class="text-xs mono text-[#B0501C]">Control & Physics</div>
+                            <h3 class="text-base font-bold text-[#1C1A16]">Firmware-Embedded VTOL Nonlinear MPC & Solver</h3>
+                            <p class="text-xs text-[#6B6558] leading-relaxed">
+                                Led a team in the development of a Real-time C++ control module (<code class="mono text-[#1B4B8F]">vtol_nmpc_control</code>) directly inside PX4 firmware. Replaces static gains with acados solvers and data-driven dynamic identification (SINDy) to optimize complex multi-rotor transition trajectories on flight hardware.
                             </p>
 
                             <!-- Snippet -->
@@ -211,11 +237,11 @@ private:
 };</code></pre>
                             </div>
 
-                            <div class="flex flex-wrap gap-2 text-[11px] mono text-[#58a6ff]">
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">PX4 Firmware</span>
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">NonLinear MPC</span>
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">acados Solver</span>
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">uORB Loops</span>
+                            <div class="flex flex-wrap gap-2 text-[11px] mono text-[#1B4B8F]">
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">PX4 Firmware</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">NonLinear MPC</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">acados Solver</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">uORB Loops</span>
                             </div>
 
                             <div class="pt-1 text-xs mono space-x-3">
@@ -230,21 +256,21 @@ private:
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
                         <!-- Media Loop -->
                         <div class="md:col-span-5 space-y-2">
-                            <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#30363d] relative">
+                            <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#DAD5C7] relative">
                                 <video autoplay loop muted playsinline poster="assets/encrypt_demo.jpg" class="w-full h-full object-cover">
                                     <source src="assets/encrypt_demo.mp4" type="video/mp4">
                                     <img src="assets/encrypt_demo.png" alt="PX4 Encryption Demo" class="w-full h-full object-cover">
                                 </video>
                             </div>
-                            <span class="text-[10px] mono text-[#8b949e] block">Fig 3: Key exchange over MAVLink.</span>
+                            <span class="text-[10px] mono text-[#6B6558] block">Fig 3: Key exchange over MAVLink.</span>
                         </div>
 
                         <!-- Content -->
                         <div class="md:col-span-7 space-y-3">
-                            <div class="text-xs mono text-[#bc8cff]">Security</div>
-                            <h3 class="text-base font-bold text-[#f0f6fc]">Cryptographic Telemetry Layer</h3>
-                            <p class="text-xs text-[#8b949e] leading-relaxed">
-                                Led a team in building a Zero-trust AEAD encryption (<code class="mono text-[#58a6ff]">MavlinkCrypt</code>) embedded into firmware telemetry links, with automated memory zeroing (<code class="mono text-[#58a6ff]">crypto_wipe</code>) on session teardown.
+                            <div class="text-xs mono text-[#B0501C]">Security</div>
+                            <h3 class="text-base font-bold text-[#1C1A16]">Cryptographic Telemetry Layer</h3>
+                            <p class="text-xs text-[#6B6558] leading-relaxed">
+                                Led a team in building a Zero-trust AEAD encryption (<code class="mono text-[#1B4B8F]">MavlinkCrypt</code>) embedded into firmware telemetry links, with automated memory zeroing (<code class="mono text-[#1B4B8F]">crypto_wipe</code>) on session teardown.
                             </p>
 
                             <!-- Snippet -->
@@ -259,9 +285,9 @@ private:
 }</code></pre>
                             </div>
 
-                            <div class="flex flex-wrap gap-2 text-[11px] mono text-[#58a6ff]">
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">AEAD Encryption</span>
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">MAVLink Core</span>
+                            <div class="flex flex-wrap gap-2 text-[11px] mono text-[#1B4B8F]">
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">AEAD Encryption</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">MAVLink Core</span>
                             </div>
 
                             <div class="pt-1 text-xs mono space-x-3">
@@ -275,54 +301,54 @@ private:
         </section>
 
         <!-- GALLERY (CLEAN MINIMAL GRID) -->
-        <section class="space-y-4 pt-6 border-t border-[#30363d]">
+        <section class="space-y-4 pt-6 border-t border-[#DAD5C7]">
             <div>
-                <h2 class="text-lg font-bold text-[#f0f6fc]">Gallery</h2>
+                <h2 class="text-lg font-bold text-[#1C1A16]">Gallery</h2>
             </div>
 
             <!-- CLEAN 3x2 PHOTO GRID (NO DESCRIPTIONS) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 
-                <div class="p-2 rounded border border-[#30363d] bg-[#161b22]">
+                <div class="p-2 rounded border border-[#DAD5C7] bg-[#F1EEE6]">
                     <div class="aspect-video rounded overflow-hidden bg-[#010409]">
                         <img src="assets/cri.jpg" alt="Tarmac Pre-Flight Operations" class="w-full h-full object-cover">
                     </div>
-                    <div class="mt-2 text-xs font-semibold text-[#f0f6fc] text-center"></div>
+                    <div class="mt-2 text-xs font-semibold text-[#1C1A16] text-center"></div>
                 </div>
 
-                <div class="p-2 rounded border border-[#30363d] bg-[#161b22]">
+                <div class="p-2 rounded border border-[#DAD5C7] bg-[#F1EEE6]">
                     <div class="aspect-video rounded overflow-hidden bg-[#010409]">
                         <img src="assets/me@uas2.jpg" alt="On-Vehicle Setup" class="w-full h-full object-cover">
                     </div>
-                    <div class="mt-2 text-xs font-semibold text-[#f0f6fc] text-center"></div>
+                    <div class="mt-2 text-xs font-semibold text-[#1C1A16] text-center"></div>
                 </div>
 
-                <div class="p-2 rounded border border-[#30363d] bg-[#161b22]">
+                <div class="p-2 rounded border border-[#DAD5C7] bg-[#F1EEE6]">
                     <div class="aspect-video rounded overflow-hidden bg-[#010409]">
                         <img src="assets/me@pf1.jpg" alt="Lab Briefing" class="w-full h-full object-cover">
                     </div>
-                    <div class="mt-2 text-xs font-semibold text-[#f0f6fc] text-center"></div>
+                    <div class="mt-2 text-xs font-semibold text-[#1C1A16] text-center"></div>
                 </div>
 
-                <div class="p-2 rounded border border-[#30363d] bg-[#161b22]">
+                <div class="p-2 rounded border border-[#DAD5C7] bg-[#F1EEE6]">
                     <div class="aspect-video rounded overflow-hidden bg-[#010409]">
                         <img src="assets/quad.jpg" alt="Multirotor Workbench Setup" class="w-full h-full object-cover">
                     </div>
-                    <div class="mt-2 text-xs font-semibold text-[#f0f6fc] text-center"></div>
+                    <div class="mt-2 text-xs font-semibold text-[#1C1A16] text-center"></div>
                 </div>
 
-                <div class="p-2 rounded border border-[#30363d] bg-[#161b22]">
+                <div class="p-2 rounded border border-[#DAD5C7] bg-[#F1EEE6]">
                     <div class="aspect-video rounded overflow-hidden bg-[#010409]">
                         <img src="assets/me@uas3.jpg" alt="Flight Line" class="w-full h-full object-cover">
                     </div>
-                    <div class="mt-2 text-xs font-semibold text-[#f0f6fc] text-center"></div>
+                    <div class="mt-2 text-xs font-semibold text-[#1C1A16] text-center"></div>
                 </div>
 
-                <div class="p-2 rounded border border-[#30363d] bg-[#161b22]">
+                <div class="p-2 rounded border border-[#DAD5C7] bg-[#F1EEE6]">
                     <div class="aspect-video rounded overflow-hidden bg-[#010409]">
                         <img src="assets/me@uas1.jpg" alt="Quadplane Config" class="w-full h-full object-cover">
                     </div>
-                    <div class="mt-2 text-xs font-semibold text-[#f0f6fc] text-center"></div>
+                    <div class="mt-2 text-xs font-semibold text-[#1C1A16] text-center"></div>
                 </div>
 
             </div>
@@ -331,9 +357,8 @@ private:
     </main>
 
     <!-- FOOTER -->
-    <footer class="mt-20 pt-6 border-t border-[#30363d] text-xs mono text-[#8b949e] flex justify-between items-center">
+    <footer class="mt-20 pt-6 border-t border-[#DAD5C7] text-xs mono text-[#6B6558] flex justify-between items-center">
         <span>© 2026 Elisha Madaki</span>
-        <span>Flight Software & Autonomy</span>
     </footer>
 
 </body>
