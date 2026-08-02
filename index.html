@@ -137,7 +137,7 @@
         <!-- FEATURED PROJECTS / RESEARCH WORK -->
         <section class="space-y-8">
             <div class="border-b border-[#30363d] pb-2">
-                <h2 class="text-lg font-bold text-[#f0f6fc]">Autonomous Systems & Neural Architecture</h2>
+                <h2 class="text-lg font-bold text-[#f0f6fc]">Some projects & Research Work</h2>
             </div>
 
             <div class="space-y-8">
@@ -161,7 +161,7 @@
 
                         <!-- Content -->
                         <div class="md:col-span-7 space-y-3">
-                            <div class="text-xs mono text-[#bc8cff]">Embodied Vision & Intelligence</div>
+                            <div class="text-xs mono text-[#bc8cff]">Vision & Intelligence</div>
                             <h3 class="text-base font-bold text-[#f0f6fc]">Onboard Neural Object Detection & Real-Time Tracking Engine</h3>
                             <p class="text-xs text-[#8b949e] leading-relaxed">
                                 Engineered an edge neural computer vision pipeline for target tracking and autonomous interception. Operates real-time object detection models (YOLO) coupled with continuous SORT Kalman tracking to stream 3D spatial velocity vectors into the vehicle position control loops without offboard computing.
@@ -198,8 +198,8 @@
 
                         <!-- Content -->
                         <div class="md:col-span-7 space-y-3">
-                            <div class="text-xs mono text-[#bc8cff]">Advanced Control & Physics ID</div>
-                            <h3 class="text-base font-bold text-[#f0f6fc]">Firmware-Embedded VTOL Neural MPC & SINDy Solver</h3>
+                            <div class="text-xs mono text-[#bc8cff]">Control & Physics</div>
+                            <h3 class="text-base font-bold text-[#f0f6fc]">Firmware-Embedded VTOL Nonlinear MPC & Solver</h3>
                             <p class="text-xs text-[#8b949e] leading-relaxed">
                                 Integrated a real-time C++ control module (<code class="mono text-[#58a6ff]">vtol_nmpc_control</code>) directly inside PX4 firmware. Bypasses static gains by leveraging acados solvers and data-driven dynamic identification (SINDy) to optimize complex multi-rotor transition trajectories on flight hardware.
                             </p>
@@ -219,8 +219,8 @@ private:
                             </div>
 
                             <div class="flex flex-wrap gap-2 text-[11px] mono text-[#58a6ff]">
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">C++ PX4 Firmware</span>
-                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">SINDy Dynamic ID</span>
+                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">PX4 Firmware</span>
+                                <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">NonLinear MPC</span>
                                 <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">acados Solver</span>
                                 <span class="bg-[#1f242c] px-2 py-0.5 rounded border border-[#30363d]">uORB Loops</span>
                             </div>
@@ -240,7 +240,7 @@ private:
                             <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#30363d] relative">
                                 <video autoplay loop muted playsinline poster="assets/encrypt_demo.jpg" class="w-full h-full object-cover">
                                     <source src="assets/encrypt_demo.mp4" type="video/mp4">
-                                    <img src="assets/encrypt_demo.jpg" alt="PX4 Encryption Demo" class="w-full h-full object-cover">
+                                    <img src="assets/encrypt_demo.png" alt="PX4 Encryption Demo" class="w-full h-full object-cover">
                                 </video>
                             </div>
                             <span class="text-[10px] mono text-[#8b949e] block">Fig 3: Verified AEAD cryptographic key exchange over MAVLink.</span>
@@ -248,10 +248,10 @@ private:
 
                         <!-- Content -->
                         <div class="md:col-span-7 space-y-3">
-                            <div class="text-xs mono text-[#bc8cff]">Security & Abstraction Layer</div>
+                            <div class="text-xs mono text-[#bc8cff]">Security</div>
                             <h3 class="text-base font-bold text-[#f0f6fc]">Cryptographic Telemetry Layer</h3>
                             <p class="text-xs text-[#8b949e] leading-relaxed">
-                                Embedded zero-trust AEAD encryption (<code class="mono text-[#58a6ff]">MavlinkCrypt</code>) into firmware telemetry links alongside a vehicle-agnostic autonomy SDK. Features automated memory zeroing (<code class="mono text-[#58a6ff]">crypto_wipe</code>) upon session teardown to protect decentralized swarm telemetry.
+                                Embedded zero-trust AEAD encryption (<code class="mono text-[#58a6ff]">MavlinkCrypt</code>) into firmware telemetry links. Features automated memory zeroing (<code class="mono text-[#58a6ff]">crypto_wipe</code>) upon session teardown to protect data.
                             </p>
 
                             <!-- Snippet -->
