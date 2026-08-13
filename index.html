@@ -84,11 +84,11 @@
             </div>
             
             <p class="text-sm text-[#6B6558] leading-relaxed">
-                Basically an Autonomy and Controls guy building vehicle-agnostic autonomy systems at the intersection of bare-metal C++ software and real-time embodied intelligence. Finding my way around deep neural perception, Neural Network-Based MPC (NN-MPC), Deep Reinforcement Learning (RL) for dynamic systems, and decentralized swarm intelligence with work validated in SITL and select modules running on hardware.
+                Autonomy and Controls guy building vehicle-agnostic autonomy systems at the intersection of bare-metal C++ software and real-time embodied intelligence. Finding my way around deep neural perception, Neural Network-Based MPC (NN-MPC), Deep Reinforcement Learning (RL) for dynamic systems, and decentralized swarm intelligence with work validated in SITL and select modules running on hardware.
             </p>
 
              <p class="text-sm text-[#6B6558] leading-relaxed">
-                I have also spent quite some time building and working with aerial robots, with deep understanding and work across existing open-source architectures (PX4, Ardupilot) and leveraging SDKs (DJI) to extend proprietary drone architectures.
+                As a primary vehicle for these autonomy frameworks, I have extensively developed and built aerial robots. This includes deep code-level development within open-source flight architectures, complemented by building custom integration layers via proprietary drone SDKs (DJI).
             </p>
 
             <!-- Links -->
@@ -165,6 +165,51 @@
 
             <div class="space-y-8">
 
+                <!-- PROJECT 1: DECENTRALIZED VENDOR-AGNOSTIC DRONE SWARM -->
+                <div class="project-card p-5 space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+                        <!-- Media Loop -->
+                        <div class="md:col-span-5 space-y-2">
+                            <!-- TODO: swap in a short clip of the GCS (gcs/index.html) or SITL fleet run -->
+                            <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#DAD5C7] relative">
+                                <video autoplay loop muted playsinline poster="assets/swarm_gcs.jpg" class="w-full h-full object-cover">
+                                    <source src="assets/swarm_gcs.mp4" type="video/mp4">
+                                    <img src="assets/main_swarm.mp4" alt="Swarm Ground Control Station" class="w-full h-full object-cover">
+                                </video>
+                            </div>
+                            <!-- TODO: swap in a still of the mesh/auction view or fleet in SITL -->
+                            <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#DAD5C7] relative">
+                                <img src="assets/swarm_gcs.png" alt="Swarm Mesh & Task Auction" class="w-full h-full object-cover">
+                            </div>
+                            <span class="text-[10px] mono text-[#6B6558] block">Fig 1: 5-drone fleet coordinating over a live mesh + task auction, ArduPilot SITL.</span>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="md:col-span-7 space-y-3">
+                            <div class="text-xs mono text-[#B0501C]">Multi-Agent Systems</div>
+                            <h3 class="text-base font-bold text-[#1C1A16]">Decentralized, Vendor-Agnostic Drone Swarm</h3>
+                            <p class="text-xs text-[#6B6558] leading-relaxed">
+                                Coordinated a 5-drone fleet over a typed ROS 2 architecture: drones build a live mesh of who-can-reach-whom, bid on tasks through a Contract-Net-style auction, and hand off work automatically on low battery — all running against real ArduPilot flight physics in SITL. YOLOv8 sightings autonomously spawn tasks; a <code class="mono text-[#1B4B8F]">VehicleAdapter</code> interface keeps the coordination stack agnostic to the flight controller underneath (ArduPilot/PX4 now, DJI-adaptable later). Pure cores are pytest-covered, with watchdogs at the fleet and auction layer and idempotent re-auctioning over lossy links.
+                            </p>
+                            <p class="text-[11px] text-[#6B6558] leading-relaxed italic">
+                                Known limitation: Gazebo's 3D visual physics integration isn't working yet — the swarm runs on ArduPilot SITL's internal physics instead, so flight logic and coordination are unaffected, only the rendered view.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-[11px] mono text-[#1B4B8F]">
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">ROS 2</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">ArduPilot SITL</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">Contract-Net Auction</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">YOLOv8</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">Mesh Topology</span>
+                            </div>
+
+                            <div class="pt-1 text-xs mono space-x-3">
+                                <a href="https://github.com/MadakiElisha/swarm-projectII" target="_blank" class="research-link">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- PROJECT 1: EMBODIED TARGET TRACKING & NNS -->
                 <div class="project-card p-5 space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
@@ -179,7 +224,7 @@
                             <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#DAD5C7] relative">
                                 <img src="assets/drone_tracker.png" alt="Drone Tracker" class="w-full h-full object-cover">
                             </div>
-                            <span class="text-[10px] mono text-[#6B6558] block">Fig 1: Closed-loop neural vision pipeline in Gazebo SITL.</span>
+                            <span class="text-[10px] mono text-[#6B6558] block">Fig 2: Closed-loop neural vision pipeline in Gazebo SITL.</span>
                         </div>
 
                         <!-- Content -->
