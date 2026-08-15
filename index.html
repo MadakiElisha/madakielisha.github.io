@@ -197,10 +197,10 @@
                             <div class="text-xs mono text-[#B0501C]">Multi-Agent Systems</div>
                             <h3 class="text-base font-bold text-[#1C1A16]">Decentralized, Vendor-Agnostic Drone Swarm</h3>
                             <p class="text-xs text-[#6B6558] leading-relaxed">
-                                Coordinated a 5-drone fleet over a typed ROS 2 architecture: drones build a live mesh of who-can-reach-whom, bid on tasks through a Contract-Net-style auction, and hand off work automatically on low battery — all running against real ArduPilot flight physics in SITL. YOLOv8 sightings autonomously spawn tasks; a <code class="mono text-[#1B4B8F]">VehicleAdapter</code> interface keeps the coordination stack agnostic to the flight controller underneath (ArduPilot/PX4 now, DJI-adaptable later). Pure cores are pytest-covered, with watchdogs at the fleet and auction layer and idempotent re-auctioning over lossy links.
+                                Coordinated a 5-drone fleet over a typed ROS 2 architecture: drones build a live mesh of who-can-reach-whom, bid on tasks through a Contract-Net-style auction, and hand off work automatically on low battery — all running against real ArduPilot flight physics in SITL. YOLOv8 sightings sees, asks human permission confirmation and acts; a <code class="mono text-[#1B4B8F]">VehicleAdapter</code> interface keeps the coordination stack agnostic to the flight controller underneath (ArduPilot/PX4 now, DJI-adaptable later). Pure cores are pytest-covered, with watchdogs at the fleet and auction layer and idempotent re-auctioning over lossy links.
                             </p>
                             <p class="text-[11px] text-[#6B6558] leading-relaxed italic">
-                                Known limitation: Gazebo's 3D visual physics integration isn't working yet — the swarm runs on ArduPilot SITL's internal physics instead, so flight logic and coordination are unaffected, only the rendered view.
+                                Known limitation: Gazebo's 3D visual physics integration isn't working yet — the swarm runs on ArduPilot SITL's internal physics instead, so flight logic and coordination are unaffected, only the rendered view. A lightweight 3D gcs was designed and is currently being used for rendering and visualization.
                             </p>
 
                             <div class="flex flex-wrap gap-2 text-[11px] mono text-[#1B4B8F]">
