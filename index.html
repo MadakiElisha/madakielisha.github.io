@@ -218,7 +218,51 @@
                     </div>
                 </div>
 
-                <!-- PROJECT 2: EMBODIED TARGET TRACKING & NNS -->
+                               <!-- PROJECT 2: GNSS-DENIED TERRAIN-REFERENCED NAVIGATION -->
+                <div class="project-card p-5 space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+                        <!-- Media Loop -->
+                        <div class="md:col-span-5 space-y-2">
+                                 <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#DAD5C7] relative">
+                                <video autoplay loop muted playsinline poster="assets/gdn_terrain_mesh.png" class="w-full h-full object-cover">
+                                    <source src="assets/gdn_2.mp4" type="video/mp4">
+                                    <img src="assets/gdn.png" alt="GDN Visualization" class="w-full h-full object-cover">
+                                </video>
+                            </div>
+ 
+                            <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#DAD5C7] relative">
+                                <img src="assets/gdn.png" alt="GDN Visualization" class="w-full h-full object-cover">
+                            </div>
+                            <span class="text-[10px] mono text-[#6B6558] block">Fig 2: Terrain-referenced ESKF navigation, fixed-wing PX4 SITL replay.</span>
+                        </div>
+ 
+                        <!-- Content -->
+                        <div class="md:col-span-7 space-y-3">
+                            <div class="text-xs mono text-[#B0501C]">Navigation & State Estimation</div>
+                            <h3 class="text-base font-bold text-[#1C1A16]">GDN — GNSS-Denied Terrain-Referenced Navigation</h3>
+                            <p class="text-xs text-[#6B6558] leading-relaxed">
+                                Error-state Kalman filter (ESKF) navigation stack for any aerial vehicle operating without GNSS. Fuses IMU, a terrain-elevation measurement, and a barometer against an onboard terrain database to produce a bounded 3D position estimate in a local map frame. The core carries no airframe model, so the same estimator runs unchanged on fixed-wing, multirotor, and VTOL platforms; platform specifics enter only through sensor-noise tuning. Validated on a fixed-wing PX4 SITL replay at 15.7 m RMS horizontal accuracy, with a 100-seed Monte Carlo robustness campaign (CEP50 14.9 m, CEP95 40.3 m) and 14/14 unit tests passing a dual-optimization build gate.
+                            </p>
+                            <p class="text-[11px] text-[#6B6558] leading-relaxed italic">
+                                Known limitation: enabling the barometer update currently degrades horizontal accuracy (15.2 m to 24–28 m) due to attitude-uncertainty cross-terms in the covariance; root cause is diagnosed and the planned fix is a magnetometer-based yaw transfer to reduce that uncertainty directly.
+                            </p>
+ 
+                            <div class="flex flex-wrap gap-2 text-[11px] mono text-[#1B4B8F]">
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">Error-State Kalman Filter</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">Terrain-Referenced Nav</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">ROS 2</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">PX4 SITL</span>
+                                <span class="bg-[#EAE6D9] px-2 py-0.5 rounded border border-[#DAD5C7]">Monte Carlo Validation</span>
+                            </div>
+ 
+                            <div class="pt-1 text-xs mono space-x-3">
+                                <a href="https://github.com/MadakiElisha/gdn" target="_blank" class="research-link">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: EMBODIED TARGET TRACKING & NNS -->
                 <div class="project-card p-5 space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
                         <!-- Media Loop -->
@@ -232,7 +276,7 @@
                             <div class="aspect-video bg-[#010409] rounded overflow-hidden border border-[#DAD5C7] relative">
                                 <img src="assets/drone_tracker.png" alt="Drone Tracker" class="w-full h-full object-cover">
                             </div>
-                            <span class="text-[10px] mono text-[#6B6558] block">Fig 2: Closed-loop neural vision pipeline in Gazebo SITL.</span>
+                            <span class="text-[10px] mono text-[#6B6558] block">Fig 3: Closed-loop neural vision pipeline in Gazebo SITL.</span>
                         </div>
 
                         <!-- Content -->
@@ -258,7 +302,7 @@
                     </div>
                 </div>
 
-                <!-- PROJECT 3: NMPC -->
+                <!-- PROJECT 4: NMPC -->
                 <div class="project-card p-5 space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
                         <!-- Media Loop -->
@@ -269,7 +313,7 @@
                                     <img src="assets/vtol_nmpcIV.png" alt="VTOL NMPC Simulation" class="w-full h-full object-cover">
                                 </video>
                             </div>
-                            <span class="text-[10px] mono text-[#6B6558] block">Fig 3: Real-time C++ NMPC trajectory optimization in SITL.</span>
+                            <span class="text-[10px] mono text-[#6B6558] block">Fig 4: Real-time C++ NMPC trajectory optimization in SITL.</span>
                         </div>
 
                         <!-- Content -->
@@ -308,7 +352,7 @@ private:
                     </div>
                 </div>
 
-                <!-- PROJECT 4: MAVLINK CRYPTOGRAPHY -->
+                <!-- PROJECT 5: MAVLINK CRYPTOGRAPHY -->
                 <div class="project-card p-5 space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
                         <!-- Media Loop -->
@@ -319,7 +363,7 @@ private:
                                     <img src="assets/encrypt_demo.png" alt="PX4 Encryption Demo" class="w-full h-full object-cover">
                                 </video>
                             </div>
-                            <span class="text-[10px] mono text-[#6B6558] block">Fig 4: Key exchange over MAVLink.</span>
+                            <span class="text-[10px] mono text-[#6B6558] block">Fig 5: Key exchange over MAVLink.</span>
                         </div>
 
                         <!-- Content -->
