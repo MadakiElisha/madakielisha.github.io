@@ -239,7 +239,7 @@
                         <!-- Content -->
                         <div class="md:col-span-7 space-y-3">
                             <div class="text-xs mono text-[#B0501C]">Navigation & State Estimation</div>
-                            <h3 class="text-base font-bold text-[#1C1A16]">GDN - GNSS-Denied Terrain-Referenced Navigation</h3>
+                            <h3 class="text-base font-bold text-[#1C1A16]">GDN: GNSS-Denied Terrain-Referenced Navigation</h3>
                             <p class="text-xs text-[#6B6558] leading-relaxed">
                                 Error-state Kalman filter (ESKF) navigation stack for any aerial vehicle operating without GNSS. Fuses IMU, a terrain-elevation measurement, and a barometer against an onboard terrain database to produce a bounded 3D position estimate in a local map frame. The core carries no airframe model, so the same estimator runs unchanged on fixed-wing, multirotor, and VTOL platforms; platform specifics enter only through sensor-noise tuning. Validated on a fixed-wing PX4 SITL replay at 15.7 m RMS horizontal accuracy, with a 100-seed Monte Carlo robustness campaign (CEP50 14.9 m, CEP95 40.3 m) and 14/14 unit tests passing a dual-optimization build gate.
                             </p>
